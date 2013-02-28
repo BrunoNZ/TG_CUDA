@@ -4,6 +4,7 @@ all: compilar_tg
 
 compilar_tg:
 	pdflatex -synctex=1 -interaction=nonstopmode $(ARQ_TCC)
+	bibtex Artigo_TG
 	pdflatex -synctex=1 -interaction=nonstopmode $(ARQ_TCC)
 
 clean:

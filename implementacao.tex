@@ -32,13 +32,13 @@ Uma solução para possibilitar o uso desses algoritmos em qualquer plataforma C
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Para contornar isso foi utilizado uma função de leitura que armazena os dados na memória do Host de forma que a série de tempo de cada quadrícula seja contínua (\label{fig:organizacao_dados_2}), assim sendo possível copiar pedaços separados desse dado para a GPU. Além disso, ao invés da estrutura de matriz foi usado a estrutura de um vetor comum para armazenar esses valores e funções auxiliares para calcular a posição na memória em que se inicia os dados de cada quadrícula. Essa decisão ainda facilita a cópia de dados entre a memória do Host e do Device.
+Para contornar isso foi utilizado uma função de leitura que armazena os dados na memória do Host de forma que a série de tempo de cada quadrícula seja contínua (\ref{fig:organizacao_dados_2}), assim sendo possível copiar pedaços separados desse dado para a GPU. Além disso, ao invés da estrutura de matriz foi usado a estrutura de um vetor comum para armazenar esses valores e funções auxiliares para calcular a posição na memória em que se inicia os dados de cada quadrícula. Essa decisão ainda facilita a cópia de dados entre a memória do Host e do Device.
 
-\subsection{Implementação da solução}
+\subsection{Implementação da solução}\label{cap:implementacao_solucao}
 
 Em teoria essa tarefa seria a mais difícil do processo de implementação do algoritmo em CUDA, porém foi o que menos precisou de ajustes. Nas função que implementam os algoritmo em si as únicas alterações necessárias foram remover o loop de incremento das quadrículas a serem processadas, necessário na versão sequencial, e adicionar o cálculo que defini qual quadrícula cada um dos núcleos de processamento da GPU será responsável por processar.
 
-Foi a função $Main$ do código em C que sofreu as maiores mudanças. Porém, grande parte dessas alterações foram apenas para adicionar as premissas básicas de todo programa, como alocação e inicialização de memória, no contexto do CUDA. As outras modificações foram a adição das funções de cópia de memória entre Host e Device e um loop para controlar os ciclos.
+Foi a função \texttt{Main} do código em C que sofreu as maiores mudanças. Porém, grande parte dessas alterações foram apenas para adicionar as premissas básicas de todo programa, como alocação e inicialização de memória, no contexto do CUDA. As outras modificações foram a adição das funções de cópia de memória entre Host e Device e um loop para controlar os ciclos.
 
 Esses ciclos foram pensados para o caso da memória total necessária para armazenar os dados de entrada e saída for maior do que o total de memória disponível na GPU. Para que esse método funcione, além da organização dos dados previamente descrita, foi criado um pequeno algoritmo para dividir igualmente o processamento entre os vários ciclos. Dentro de cada um desses ciclos as seguinte ações são executadas, em ordem:
 
@@ -59,7 +59,7 @@ Todas essas ações possuem relações diretas com as ações consideradas prati
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{Imagens/comparacao_codigo_main.png}
-\caption{Comparação da função $Main$}
+\caption{Comparação da função \texttt{Main}}
 \label{fig:comparacao_codigo_main}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
