@@ -1,1 +1,0 @@
-/home/bruno/Materias_UFPR/TG_CUDA/Implementacao/MonteCarlo/v_C-OMP-CUDA/compila_log.sh

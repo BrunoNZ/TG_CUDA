@@ -1,1 +1,0 @@
-/home/bruno/Materias_UFPR/TG_CUDA/Implementacao/Lanczos/v_C-OMP-CUDA/executa.sh
