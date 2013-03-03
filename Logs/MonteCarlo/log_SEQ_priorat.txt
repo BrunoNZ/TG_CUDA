@@ -1,0 +1,120 @@
+############################
+## LOG GERADO EM: "Seg Dez  3 00:55:18 BRST 2012"
+## NO HOST: "priorat"
+## COM OS PARAMETROS: "OP_VERSAO:seq/LISTA_NT:"1000 3000 5000"/LISTA_PERM:"1000 3000 5000 7000 9000"/ARQ_LOG:logs/log_SEQ_priorat.txt "
+## INICIADO NO TEMPO: "1354503318"
+############################
+
+############################
+## [EXEC]_NT:1000/PERM:1000
+make: Nada a ser feito para `seq'.
+
+real	0m58.142s
+user	0m57.876s
+sys	0m0.228s
+############################
+## [EXEC]_NT:1000/PERM:3000
+make: Nada a ser feito para `seq'.
+
+real	2m51.992s
+user	2m51.540s
+sys	0m0.422s
+############################
+## [EXEC]_NT:1000/PERM:5000
+make: Nada a ser feito para `seq'.
+
+real	4m51.358s
+user	4m50.600s
+sys	0m0.708s
+############################
+## [EXEC]_NT:1000/PERM:7000
+make: Nada a ser feito para `seq'.
+
+real	6m43.797s
+user	6m42.745s
+sys	0m0.983s
+############################
+## [EXEC]_NT:1000/PERM:9000
+make: Nada a ser feito para `seq'.
+
+real	8m44.213s
+user	8m42.785s
+sys	0m1.340s
+############################
+## [EXEC]_NT:3000/PERM:1000
+make: Nada a ser feito para `seq'.
+
+real	3m13.917s
+user	3m13.288s
+sys	0m0.499s
+############################
+## [EXEC]_NT:3000/PERM:3000
+make: Nada a ser feito para `seq'.
+
+real	9m39.064s
+user	9m38.351s
+sys	0m0.614s
+############################
+## [EXEC]_NT:3000/PERM:5000
+make: Nada a ser feito para `seq'.
+
+real	16m12.739s
+user	16m11.533s
+sys	0m1.044s
+############################
+## [EXEC]_NT:3000/PERM:7000
+make: Nada a ser feito para `seq'.
+
+real	22m25.785s
+user	22m24.142s
+sys	0m1.419s
+############################
+## [EXEC]_NT:3000/PERM:9000
+make: Nada a ser feito para `seq'.
+
+real	28m50.128s
+user	28m48.022s
+sys	0m1.818s
+############################
+## [EXEC]_NT:5000/PERM:1000
+make: Nada a ser feito para `seq'.
+
+real	5m27.317s
+user	5m26.758s
+sys	0m0.473s
+############################
+## [EXEC]_NT:5000/PERM:3000
+make: Nada a ser feito para `seq'.
+
+real	16m20.859s
+user	16m19.816s
+sys	0m0.875s
+############################
+## [EXEC]_NT:5000/PERM:5000
+make: Nada a ser feito para `seq'.
+
+real	27m13.843s
+user	27m12.240s
+sys	0m1.332s
+############################
+## [EXEC]_NT:5000/PERM:7000
+make: Nada a ser feito para `seq'.
+
+real	38m18.227s
+user	38m15.942s
+sys	0m1.903s
+############################
+## [EXEC]_NT:5000/PERM:9000
+make: Nada a ser feito para `seq'.
+
+real	48m48.343s
+user	48m45.523s
+sys	0m2.334s
+
+############################
+## EXECUCAO TERMINADA COM SUCESSO
+## TOTAL DE ERROS: "15"
+## TERMINADO NO TEMPO "1354517758"
+## DURACAO TOTAL (sec): "14440"
+## DURACAO TOTAL (min): "240.66666666666666666666"
+############################

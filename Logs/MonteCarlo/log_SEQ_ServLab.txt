@@ -1,0 +1,105 @@
+############################
+## LOG GERADO EM: "Ter Dez 11 16:43:08 BRST 2012"
+## NO HOST: "elbrus"
+## COM OS PARAMETROS: "OP_VERSAO:seq/LISTA_NT:"1000 3000 5000"/LISTA_PERM:"1000 3000 5000 7000 9000"/ARQ_LOG:log_SEQ_ServLab_MCarlo.txt "
+## INICIADO NO TEMPO: "1355251388"
+############################
+
+############################
+## [EXEC]_NT:1000/PERM:1000
+
+real	0m23.089s
+user	0m22.829s
+sys	0m0.108s
+############################
+## [EXEC]_NT:1000/PERM:3000
+
+real	1m8.442s
+user	1m8.388s
+sys	0m0.004s
+############################
+## [EXEC]_NT:1000/PERM:5000
+
+real	1m54.090s
+user	1m53.979s
+sys	0m0.016s
+############################
+## [EXEC]_NT:1000/PERM:7000
+
+real	2m39.694s
+user	2m39.578s
+sys	0m0.000s
+############################
+## [EXEC]_NT:1000/PERM:9000
+
+real	3m25.412s
+user	3m25.225s
+sys	0m0.020s
+############################
+## [EXEC]_NT:3000/PERM:1000
+
+real	1m17.605s
+user	1m17.309s
+sys	0m0.036s
+############################
+## [EXEC]_NT:3000/PERM:3000
+
+real	3m51.830s
+user	3m51.650s
+sys	0m0.012s
+############################
+## [EXEC]_NT:3000/PERM:5000
+
+real	6m26.829s
+user	6m26.460s
+sys	0m0.056s
+############################
+## [EXEC]_NT:3000/PERM:7000
+
+real	9m0.494s
+user	9m0.086s
+sys	0m0.016s
+############################
+## [EXEC]_NT:3000/PERM:9000
+
+real	11m36.327s
+user	11m35.703s
+sys	0m0.064s
+############################
+## [EXEC]_NT:5000/PERM:1000
+
+real	2m12.865s
+user	2m12.220s
+sys	0m0.036s
+############################
+## [EXEC]_NT:5000/PERM:3000
+
+real	6m33.091s
+user	6m32.785s
+sys	0m0.020s
+############################
+## [EXEC]_NT:5000/PERM:5000
+
+real	10m56.569s
+user	10m56.061s
+sys	0m0.032s
+############################
+## [EXEC]_NT:5000/PERM:7000
+
+real	15m19.415s
+user	15m18.557s
+sys	0m0.120s
+############################
+## [EXEC]_NT:5000/PERM:9000
+
+real	19m40.630s
+user	19m39.762s
+sys	0m0.016s
+
+############################
+## EXECUCAO TERMINADA COM SUCESSO
+## TOTAL DE ERROS: "15"
+## TERMINADO NO TEMPO "1355257175"
+## DURACAO TOTAL (sec): "5787"
+## DURACAO TOTAL (min): "96.45000000000000000000"
+############################

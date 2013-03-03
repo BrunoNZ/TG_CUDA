@@ -1,0 +1,290 @@
+############################
+## LOG GERADO EM: "Seg Fev  4 23:47:03 BRST 2013"
+## NO HOST: "uhura"
+## COM OS PARAMETROS: "OP_VERSAO:omp/LISTA_NT:"100 500 1000 3000 5000"/LISTA_PERM:"1000 3000 5000 7000 9000"/ARQ_LOG:"logs/log_OMP_uhura_2.txt" /LISTA_NUM_THREADS:"2" "
+## INICIADO NO TEMPO: "1360028823"
+############################
+
+############################
+## [EXEC]_NT:100/PERM:1000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	0m6.092s
+user	0m7.100s
+sys	0m3.550s
+############################
+## [EXEC]_NT:100/PERM:3000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	0m35.324s
+user	0m42.130s
+sys	0m22.970s
+############################
+## [EXEC]_NT:100/PERM:5000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	0m59.243s
+user	1m11.410s
+sys	0m37.840s
+############################
+## [EXEC]_NT:100/PERM:7000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	1m23.073s
+user	1m41.360s
+sys	0m51.890s
+############################
+## [EXEC]_NT:100/PERM:9000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	1m33.680s
+user	1m53.550s
+sys	0m58.560s
+############################
+## [EXEC]_NT:500/PERM:1000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	0m27.564s
+user	0m29.400s
+sys	0m21.090s
+############################
+## [EXEC]_NT:500/PERM:3000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	1m20.495s
+user	1m28.070s
+sys	1m0.730s
+############################
+## [EXEC]_NT:500/PERM:5000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	2m9.393s
+user	2m24.120s
+sys	1m34.930s
+############################
+## [EXEC]_NT:500/PERM:7000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	3m5.191s
+user	3m27.790s
+sys	2m15.210s
+############################
+## [EXEC]_NT:500/PERM:9000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	4m2.283s
+user	4m24.770s
+sys	3m3.120s
+############################
+## [EXEC]_NT:1000/PERM:1000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	0m58.242s
+user	1m2.320s
+sys	0m45.140s
+############################
+## [EXEC]_NT:1000/PERM:3000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	2m44.429s
+user	3m2.920s
+sys	2m2.140s
+############################
+## [EXEC]_NT:1000/PERM:5000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	4m40.710s
+user	5m4.020s
+sys	3m35.410s
+############################
+## [EXEC]_NT:1000/PERM:7000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	6m28.607s
+user	7m1.420s
+sys	4m57.230s
+############################
+## [EXEC]_NT:1000/PERM:9000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	7m14.878s
+user	8m24.030s
+sys	5m7.270s
+############################
+## [EXEC]_NT:3000/PERM:1000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	2m48.125s
+user	3m15.860s
+sys	1m56.140s
+############################
+## [EXEC]_NT:3000/PERM:3000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	8m31.468s
+user	9m37.670s
+sys	6m11.260s
+############################
+## [EXEC]_NT:3000/PERM:5000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	13m49.240s
+user	16m12.940s
+sys	9m42.280s
+############################
+## [EXEC]_NT:3000/PERM:7000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	20m16.316s
+user	22m35.550s
+sys	15m4.990s
+############################
+## [EXEC]_NT:3000/PERM:9000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	26m31.430s
+user	29m42.990s
+sys	19m44.640s
+############################
+## [EXEC]_NT:5000/PERM:1000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	4m43.496s
+user	5m17.740s
+sys	3m27.910s
+############################
+## [EXEC]_NT:5000/PERM:3000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	12m42.203s
+user	15m23.860s
+sys	8m28.650s
+############################
+## [EXEC]_NT:5000/PERM:5000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	23m30.037s
+user	26m59.550s
+sys	16m56.180s
+############################
+## [EXEC]_NT:5000/PERM:7000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	32m39.831s
+user	37m19.080s
+sys	23m39.860s
+############################
+## [EXEC]_NT:5000/PERM:9000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+FIM.
+
+real	39m28.402s
+user	47m42.150s
+sys	26m25.810s
+
+############################
+## EXECUCAO TERMINADA COM SUCESSO
+## TOTAL DE ERROS: "0"
+## TERMINADO NO TEMPO "1360042195"
+## DURACAO TOTAL (sec): "13372"
+## DURACAO TOTAL (min): "222.86666666666666666666"
+############################

@@ -1,0 +1,104 @@
+
+############################
+## LOG GERADO EM: "Qui Out 18 12:27:38 BRT 2012"
+## NO HOST: "priorat"
+## COM OS PARAMETROS: "omp 1000 3000 5000 7000 9000 11000 13000 15000 17000 19000 21000 log_OMP_priorat.txt "
+## INICIADO NO TEMPO: "1350574058"
+############################
+
+############################
+## [EXEC]_NT:1000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	0m7.862s
+user	0m43.221s
+sys	0m0.223s
+############################
+## [EXEC]_NT:3000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	0m27.068s
+user	2m38.007s
+sys	0m0.499s
+############################
+## [EXEC]_NT:5000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	0m46.999s
+user	4m39.570s
+sys	0m0.823s
+############################
+## [EXEC]_NT:7000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	1m8.147s
+user	6m42.153s
+sys	0m1.407s
+############################
+## [EXEC]_NT:9000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	1m29.173s
+user	8m44.323s
+sys	0m2.498s
+############################
+## [EXEC]_NT:11000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	1m48.647s
+user	10m36.529s
+sys	0m1.749s
+############################
+## [EXEC]_NT:13000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	2m7.617s
+user	12m32.855s
+sys	0m1.987s
+############################
+## [EXEC]_NT:15000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	2m30.691s
+user	14m49.091s
+sys	0m2.346s
+############################
+## [EXEC]_NT:17000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	2m50.781s
+user	16m51.895s
+sys	0m2.641s
+############################
+## [EXEC]_NT:19000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	3m9.359s
+user	18m37.659s
+sys	0m2.892s
+############################
+## [EXEC]_NT:21000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	3m27.432s
+user	20m52.469s
+sys	0m3.183s
+
+############################
+## EXECUCAO TERMINADA COM SUCESSO
+## TOTAL DE ERROS: "0"
+## TERMINADO NO TEMPO "1350575252"
+## DURACAO TOTAL (sec): "1194"
+## DURACAO TOTAL (min): "19.90000000000000000000"
+############################

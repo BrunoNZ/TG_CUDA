@@ -1,0 +1,465 @@
+############################
+## LOG GERADO EM: "Qua Out 24 04:25:02 BRST 2012"
+## NO HOST: "BrunoNZ"
+## COM OS PARAMETROS: "OP_VERSAO:seq/LISTA_NT:"100 500 1000 3000 5000"/LISTA_PERM:"1000 3000 5000 7000 9000"/ARQ_LOG:/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA/logs/log_SEQ_casa.txt "
+## INICIADO NO TEMPO: "1351059902"
+############################
+
+############################
+## [EXEC]_NT:100/PERM:1000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 100
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 1000
+
+real	0m5.326s
+user	0m5.316s
+sys	0m0.004s
+############################
+## [EXEC]_NT:100/PERM:3000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 100
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 3000
+
+real	0m15.969s
+user	0m15.957s
+sys	0m0.000s
+############################
+## [EXEC]_NT:100/PERM:5000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 100
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 5000
+
+real	0m26.586s
+user	0m26.566s
+sys	0m0.008s
+############################
+## [EXEC]_NT:100/PERM:7000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 100
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 7000
+
+real	0m37.868s
+user	0m37.854s
+sys	0m0.000s
+############################
+## [EXEC]_NT:100/PERM:9000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 100
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 9000
+
+real	0m47.911s
+user	0m47.891s
+sys	0m0.000s
+############################
+## [EXEC]_NT:500/PERM:1000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 500
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 1000
+
+real	0m22.236s
+user	0m22.221s
+sys	0m0.004s
+############################
+## [EXEC]_NT:500/PERM:3000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 500
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 3000
+
+real	1m6.608s
+user	1m6.572s
+sys	0m0.012s
+############################
+## [EXEC]_NT:500/PERM:5000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 500
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 5000
+
+real	1m50.925s
+user	1m50.883s
+sys	0m0.004s
+############################
+## [EXEC]_NT:500/PERM:7000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 500
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 7000
+
+real	2m35.257s
+user	2m35.198s
+sys	0m0.004s
+############################
+## [EXEC]_NT:500/PERM:9000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 500
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 9000
+
+real	3m19.545s
+user	3m19.472s
+sys	0m0.004s
+############################
+## [EXEC]_NT:1000/PERM:1000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 1000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 1000
+
+real	0m45.814s
+user	0m45.763s
+sys	0m0.024s
+############################
+## [EXEC]_NT:1000/PERM:3000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 1000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 3000
+
+real	2m17.260s
+user	2m17.197s
+sys	0m0.016s
+############################
+## [EXEC]_NT:1000/PERM:5000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 1000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 5000
+
+real	4m7.121s
+user	4m7.035s
+sys	0m0.008s
+############################
+## [EXEC]_NT:1000/PERM:7000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 1000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 7000
+
+real	5m20.165s
+user	5m20.044s
+sys	0m0.016s
+############################
+## [EXEC]_NT:1000/PERM:9000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 1000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 9000
+
+real	6m51.627s
+user	6m51.474s
+sys	0m0.020s
+############################
+## [EXEC]_NT:3000/PERM:1000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 3000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 1000
+
+real	2m34.426s
+user	2m34.338s
+sys	0m0.032s
+############################
+## [EXEC]_NT:3000/PERM:3000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 3000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 3000
+
+real	7m42.829s
+user	7m42.597s
+sys	0m0.056s
+############################
+## [EXEC]_NT:3000/PERM:5000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 3000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 5000
+
+real	12m52.739s
+user	12m52.456s
+sys	0m0.032s
+############################
+## [EXEC]_NT:3000/PERM:7000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 3000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 7000
+
+real	17m58.795s
+user	17m58.423s
+sys	0m0.024s
+############################
+## [EXEC]_NT:3000/PERM:9000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 3000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 9000
+
+real	23m7.766s
+user	23m7.283s
+sys	0m0.044s
+############################
+## [EXEC]_NT:5000/PERM:1000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 5000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 1000
+
+real	4m22.295s
+user	4m22.120s
+sys	0m0.072s
+############################
+## [EXEC]_NT:5000/PERM:3000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 5000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 3000
+
+real	13m19.423s
+user	13m19.098s
+sys	0m0.064s
+############################
+## [EXEC]_NT:5000/PERM:5000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 5000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 5000
+
+real	21m49.699s
+user	21m49.214s
+sys	0m0.060s
+############################
+## [EXEC]_NT:5000/PERM:7000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 5000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 7000
+
+real	30m36.501s
+user	30m35.807s
+sys	0m0.060s
+############################
+## [EXEC]_NT:5000/PERM:9000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+make: Nada a ser feito para `seq'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/MonteCarlo/v_C-OMP-CUDA'
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: /home/bruno/Materias_UFPR/TG_CUDA/dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 5000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 9000
+
+real	39m21.183s
+user	39m20.352s
+sys	0m0.104s
+
+############################
+## EXECUCAO TERMINADA COM SUCESSO
+## TOTAL DE ERROS: "0"
+## TERMINADO NO TEMPO "1351072178"
+## DURACAO TOTAL (sec): "12276"
+## DURACAO TOTAL (min): "204.60000000000000000000"
+############################

@@ -1,0 +1,291 @@
+
+############################
+## LOG GERADO EM: "Qui Out 18 13:50:37 BRT 2012"
+## NO HOST: "priorat"
+## COM OS PARAMETROS: "OP_VERSAO:omp/LISTA_NT:"100 500 1000 3000 5000"/LISTA_PERM:"1000 3000 5000 7000 9000"/ARQ_LOG:log_OMP_priorat.txt "
+## INICIADO NO TEMPO: "1350579037"
+############################
+
+############################
+## [EXEC]_NT:100/PERM:1000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	0m33.658s
+user	0m35.313s
+sys	3m40.127s
+############################
+## [EXEC]_NT:100/PERM:3000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	1m42.439s
+user	1m42.552s
+sys	11m19.811s
+############################
+## [EXEC]_NT:100/PERM:5000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	2m43.918s
+user	2m42.208s
+sys	18m14.432s
+############################
+## [EXEC]_NT:100/PERM:7000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	4m7.446s
+user	4m15.355s
+sys	27m1.484s
+############################
+## [EXEC]_NT:100/PERM:9000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	5m33.241s
+user	5m40.915s
+sys	36m25.785s
+############################
+## [EXEC]_NT:500/PERM:1000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	2m38.354s
+user	2m46.633s
+sys	17m38.276s
+############################
+## [EXEC]_NT:500/PERM:3000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	6m52.056s
+user	7m19.458s
+sys	45m56.166s
+############################
+## [EXEC]_NT:500/PERM:5000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	11m36.611s
+user	12m17.409s
+sys	77m38.643s
+############################
+## [EXEC]_NT:500/PERM:7000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	17m0.126s
+user	17m48.280s
+sys	110m26.007s
+############################
+## [EXEC]_NT:500/PERM:9000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	21m6.508s
+user	21m52.991s
+sys	137m8.513s
+############################
+## [EXEC]_NT:1000/PERM:1000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	4m43.703s
+user	5m4.009s
+sys	31m33.341s
+############################
+## [EXEC]_NT:1000/PERM:3000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	13m46.289s
+user	14m27.522s
+sys	92m36.464s
+############################
+## [EXEC]_NT:1000/PERM:5000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	23m47.021s
+user	25m21.528s
+sys	158m47.902s
+############################
+## [EXEC]_NT:1000/PERM:7000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	32m44.999s
+user	35m10.040s
+sys	218m34.837s
+############################
+## [EXEC]_NT:1000/PERM:9000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	40m47.496s
+user	43m59.271s
+sys	274m22.234s
+############################
+## [EXEC]_NT:3000/PERM:1000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	13m19.749s
+user	14m48.102s
+sys	88m56.150s
+############################
+## [EXEC]_NT:3000/PERM:3000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	44m24.481s
+user	48m7.226s
+sys	299m5.273s
+############################
+## [EXEC]_NT:3000/PERM:5000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	72m56.290s
+user	79m16.742s
+sys	491m55.062s
+############################
+## [EXEC]_NT:3000/PERM:7000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	106m13.725s
+user	114m35.466s
+sys	714m58.192s
+############################
+## [EXEC]_NT:3000/PERM:9000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	141m40.384s
+user	148m22.956s
+sys	960m44.085s
+############################
+## [EXEC]_NT:5000/PERM:1000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	26m26.180s
+user	28m3.946s
+sys	179m4.139s
+############################
+## [EXEC]_NT:5000/PERM:3000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	73m52.743s
+user	80m13.064s
+sys	498m8.927s
+############################
+## [EXEC]_NT:5000/PERM:5000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	125m38.871s
+user	136m38.326s
+sys	846m48.093s
+############################
+## [EXEC]_NT:5000/PERM:7000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	178m36.292s
+user	194m13.743s
+sys	1204m44.680s
+############################
+## [EXEC]_NT:5000/PERM:9000
+make: Nada a ser feito para `omp'.
+
+PARAMETROS DE EXECUCAO:
+ > NUMERO TOTAL DE THREADS: 8
+
+
+real	225m4.266s
+user	247m9.631s
+sys	1517m42.594s
+
+############################
+## EXECUCAO TERMINADA COM SUCESSO
+## TOTAL DE ERROS: "25"
+## TERMINADO NO TEMPO "1350650914"
+## DURACAO TOTAL (sec): "71877"
+## DURACAO TOTAL (min): "1197.95000000000000000000"
+############################

@@ -1,0 +1,104 @@
+
+############################
+## LOG GERADO EM: "Ter Out 23 19:43:52 BRST 2012"
+## NO HOST: "BrunoNZ"
+## COM OS PARAMETROS: "OP_VERSAO:seq/LISTA_NT:"1000 3000 5000 7000 9000 11000 13000 15000 17000 19000 21000"/ARQ_LOG:logs/log_SEQ_casa.txt "
+## INICIADO NO TEMPO: "1351028632"
+############################
+
+############################
+## [EXEC]_NT:1000
+make: Nada a ser feito para `seq'.
+LENDO ARGUMENTOS...
+
+real	0m26.438s
+user	0m25.970s
+sys	0m0.192s
+############################
+## [EXEC]_NT:3000
+make: Nada a ser feito para `seq'.
+LENDO ARGUMENTOS...
+
+real	1m55.533s
+user	1m54.335s
+sys	0m0.536s
+############################
+## [EXEC]_NT:5000
+make: Nada a ser feito para `seq'.
+LENDO ARGUMENTOS...
+
+real	3m24.632s
+user	3m23.177s
+sys	0m0.952s
+############################
+## [EXEC]_NT:7000
+make: Nada a ser feito para `seq'.
+LENDO ARGUMENTOS...
+
+real	4m54.077s
+user	4m51.862s
+sys	0m1.284s
+############################
+## [EXEC]_NT:9000
+make: Nada a ser feito para `seq'.
+LENDO ARGUMENTOS...
+
+real	6m26.462s
+user	6m22.300s
+sys	0m1.868s
+############################
+## [EXEC]_NT:11000
+make: Nada a ser feito para `seq'.
+LENDO ARGUMENTOS...
+
+real	7m56.258s
+user	7m51.793s
+sys	0m2.288s
+############################
+## [EXEC]_NT:13000
+make: Nada a ser feito para `seq'.
+LENDO ARGUMENTOS...
+
+real	9m31.804s
+user	9m23.891s
+sys	0m3.316s
+############################
+## [EXEC]_NT:15000
+make: Nada a ser feito para `seq'.
+LENDO ARGUMENTOS...
+
+real	11m8.665s
+user	10m59.733s
+sys	0m3.960s
+############################
+## [EXEC]_NT:17000
+make: Nada a ser feito para `seq'.
+LENDO ARGUMENTOS...
+
+real	13m20.775s
+user	12m34.763s
+sys	0m5.500s
+############################
+## [EXEC]_NT:19000
+make: Nada a ser feito para `seq'.
+LENDO ARGUMENTOS...
+
+real	14m14.061s
+user	14m5.729s
+sys	0m3.944s
+############################
+## [EXEC]_NT:21000
+make: Nada a ser feito para `seq'.
+LENDO ARGUMENTOS...
+
+real	17m10.547s
+user	15m38.175s
+sys	0m6.592s
+
+############################
+## EXECUCAO TERMINADA COM SUCESSO
+## TOTAL DE ERROS: "0"
+## TERMINADO NO TEMPO "1351034065"
+## DURACAO TOTAL (sec): "5433"
+## DURACAO TOTAL (min): "90.55000000000000000000"
+############################

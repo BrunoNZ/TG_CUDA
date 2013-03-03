@@ -1,0 +1,104 @@
+
+############################
+## LOG GERADO EM: "Seg Fev  4 22:44:28 BRST 2013"
+## NO HOST: "uhura"
+## COM OS PARAMETROS: "OP_VERSAO:omp/LISTA_NT:"1000 3000 5000 7000 9000 11000 13000 15000 17000 19000 21000"/ARQ_LOG:logs/log_OMP_uhura.txt "
+## INICIADO NO TEMPO: "1360025068"
+############################
+
+############################
+## [EXEC]_NT:1000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	0m14.878s
+user	0m46.040s
+sys	0m0.100s
+############################
+## [EXEC]_NT:3000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	0m44.258s
+user	3m21.680s
+sys	0m0.370s
+############################
+## [EXEC]_NT:5000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	1m6.519s
+user	5m57.270s
+sys	0m0.530s
+############################
+## [EXEC]_NT:7000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	1m33.974s
+user	8m32.760s
+sys	0m1.070s
+############################
+## [EXEC]_NT:9000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	1m56.984s
+user	11m8.150s
+sys	0m1.030s
+############################
+## [EXEC]_NT:11000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	2m24.173s
+user	13m44.210s
+sys	0m1.400s
+############################
+## [EXEC]_NT:13000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	2m49.914s
+user	16m20.790s
+sys	0m1.310s
+############################
+## [EXEC]_NT:15000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	3m12.057s
+user	18m55.810s
+sys	0m1.850s
+############################
+## [EXEC]_NT:17000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	3m34.420s
+user	21m32.010s
+sys	0m1.960s
+############################
+## [EXEC]_NT:19000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	4m0.785s
+user	24m7.300s
+sys	0m2.420s
+############################
+## [EXEC]_NT:21000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	4m28.954s
+user	26m43.620s
+sys	0m2.440s
+
+############################
+## EXECUCAO TERMINADA COM SUCESSO
+## TOTAL DE ERROS: "0"
+## TERMINADO NO TEMPO "1360026636"
+## DURACAO TOTAL (sec): "1568"
+## DURACAO TOTAL (min): "26.13333333333333333333"
+############################

@@ -1,0 +1,416 @@
+
+############################
+## LOG GERADO EM: "Ter Dez  4 17:25:34 BRST 2012"
+## NO HOST: "elbrus"
+## COM OS PARAMETROS: "OP_VERSAO:omp/LISTA_NT:"100 500 1000 3000 5000"/LISTA_PERM:"1000 3000 5000 7000 9000"/ARQ_LOG:logs/log_OMP_ServLab.txt "
+## INICIADO NO TEMPO: "1354649134"
+############################
+
+############################
+## [EXEC]_NT:100/PERM:1000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 100
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 1000
+
+real	0m20.572s
+user	0m16.365s
+sys	0m47.043s
+############################
+## [EXEC]_NT:100/PERM:3000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 100
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 3000
+
+real	1m4.801s
+user	0m51.859s
+sys	2m30.801s
+############################
+## [EXEC]_NT:100/PERM:5000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 100
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 5000
+
+real	2m27.555s
+user	1m51.831s
+sys	5m53.198s
+############################
+## [EXEC]_NT:100/PERM:7000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 100
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 7000
+
+real	3m37.292s
+user	2m46.378s
+sys	8m40.925s
+############################
+## [EXEC]_NT:100/PERM:9000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 100
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 9000
+
+real	4m46.246s
+user	3m36.334s
+sys	11m27.703s
+############################
+## [EXEC]_NT:500/PERM:1000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 500
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 1000
+
+real	1m46.370s
+user	1m14.453s
+sys	4m29.317s
+############################
+## [EXEC]_NT:500/PERM:3000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 500
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 3000
+
+real	7m34.557s
+user	5m10.167s
+sys	19m22.681s
+############################
+## [EXEC]_NT:500/PERM:5000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 500
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 5000
+
+real	9m46.909s
+user	6m52.358s
+sys	24m54.905s
+############################
+## [EXEC]_NT:500/PERM:7000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 500
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 7000
+
+real	14m12.378s
+user	9m46.881s
+sys	36m18.508s
+############################
+## [EXEC]_NT:500/PERM:9000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 500
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 9000
+
+real	16m45.269s
+user	11m37.064s
+sys	42m44.916s
+############################
+## [EXEC]_NT:1000/PERM:1000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 1000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 1000
+
+real	2m46.666s
+user	1m59.523s
+sys	7m7.127s
+############################
+## [EXEC]_NT:1000/PERM:3000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 1000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 3000
+
+real	11m3.040s
+user	7m34.556s
+sys	28m24.519s
+############################
+## [EXEC]_NT:1000/PERM:5000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 1000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 5000
+
+real	17m9.211s
+user	11m59.221s
+sys	43m51.836s
+############################
+## [EXEC]_NT:1000/PERM:7000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 1000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 7000
+
+real	24m35.219s
+user	17m5.856s
+sys	63m7.081s
+############################
+## [EXEC]_NT:1000/PERM:9000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 1000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 9000
+
+real	37m15.871s
+user	25m41.236s
+sys	95m34.342s
+############################
+## [EXEC]_NT:3000/PERM:1000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 3000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 1000
+
+real	15m30.882s
+user	10m29.735s
+sys	40m5.242s
+############################
+## [EXEC]_NT:3000/PERM:3000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 3000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 3000
+
+real	38m55.247s
+user	26m34.228s
+sys	100m16.096s
+############################
+## [EXEC]_NT:3000/PERM:5000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 3000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 5000
+
+real	51m52.818s
+user	35m39.582s
+sys	134m6.947s
+############################
+## [EXEC]_NT:3000/PERM:7000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 3000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 7000
+
+real	68m59.780s
+user	49m4.476s
+sys	176m52.435s
+############################
+## [EXEC]_NT:3000/PERM:9000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 3000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 9000
+
+real	117m58.339s
+user	80m11.601s
+sys	304m52.559s
+############################
+## [EXEC]_NT:5000/PERM:1000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 5000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 1000
+
+real	20m25.798s
+user	14m7.805s
+sys	52m42.386s
+############################
+## [EXEC]_NT:5000/PERM:3000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 5000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 3000
+
+real	51m32.002s
+user	35m24.857s
+sys	133m47.378s
+############################
+## [EXEC]_NT:5000/PERM:5000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 5000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 5000
+
+real	116m6.991s
+user	78m3.605s
+sys	299m46.732s
+############################
+## [EXEC]_NT:5000/PERM:7000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 5000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 7000
+
+real	118m3.217s
+user	82m51.435s
+sys	304m12.581s
+############################
+## [EXEC]_NT:5000/PERM:9000
+make: Nada a ser feito para `omp'.
+
+ARGUMENTOS:
+ > ARQ_ENTRADA_1: ../../dados/dados_Africa/Af_22-25S.28-31E_1979-1999.bin
+ > ARQ_ENTRADA_2: ../../dados/dados_AmSul/AmSul_1979-1999.bin
+ > ARQ_SAIDA: saida.bin
+ > DIMENSOES: 2688 x 5000
+ > UNDEF: 777.700012
+
+ > TOTAL_PERM: 9000
+
+real	148m59.782s
+user	107m14.566s
+sys	382m50.364s
+
+############################
+## EXECUCAO TERMINADA COM SUCESSO
+## TOTAL DE ERROS: "0"
+## TERMINADO NO TEMPO "1354703350"
+## DURACAO TOTAL (sec): "54216"
+## DURACAO TOTAL (min): "903.60000000000000000000"
+############################

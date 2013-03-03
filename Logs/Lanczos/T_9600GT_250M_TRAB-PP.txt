@@ -1,0 +1,352 @@
+###########################
+NT = 1000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 10512
+ > TOTAL_CICLOS = 1
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 1314
+ > TAM_POR_CICLO = 42048000
+
+real	0m4.568s
+user	0m3.188s
+sys	0m0.764s
+
+###########################
+NT = 2000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 10512
+ > TOTAL_CICLOS = 1
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 1314
+ > TAM_POR_CICLO = 84096000
+
+real	0m10.801s
+user	0m9.249s
+sys	0m0.916s
+
+###########################
+NT = 3000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 10512
+ > TOTAL_CICLOS = 1
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 1314
+ > TAM_POR_CICLO = 126144000
+
+real	0m17.054s
+user	0m15.505s
+sys	0m1.000s
+
+###########################
+NT = 4000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 10512
+ > TOTAL_CICLOS = 1
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 1314
+ > TAM_POR_CICLO = 168192000
+
+real	0m23.665s
+user	0m21.905s
+sys	0m1.120s
+
+###########################
+NT = 5000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 10512
+ > TOTAL_CICLOS = 1
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 1314
+ > TAM_POR_CICLO = 210240000
+
+real	0m29.498s
+user	0m27.718s
+sys	0m1.216s
+
+###########################
+NT = 6000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 10512
+ > TOTAL_CICLOS = 1
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 1314
+ > TAM_POR_CICLO = 252288000
+
+real	0m35.834s
+user	0m34.050s
+sys	0m1.224s
+
+###########################
+NT = 7000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 5256
+ > TOTAL_CICLOS = 2
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 657
+ > TAM_POR_CICLO = 147168000
+
+real	0m43.433s
+user	0m41.359s
+sys	0m1.412s
+
+###########################
+NT = 8000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 5256
+ > TOTAL_CICLOS = 2
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 657
+ > TAM_POR_CICLO = 168192000
+
+real	0m51.632s
+user	0m49.483s
+sys	0m1.468s
+
+###########################
+NT = 9000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 5256
+ > TOTAL_CICLOS = 2
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 657
+ > TAM_POR_CICLO = 189216000
+
+real	0m56.705s
+user	0m54.519s
+sys	0m1.504s
+
+###########################
+NT = 10000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 5256
+ > TOTAL_CICLOS = 2
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 657
+ > TAM_POR_CICLO = 210240000
+
+real	1m3.413s
+user	1m1.284s
+sys	0m1.536s
+
+###########################
+NT = 11000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 5256
+ > TOTAL_CICLOS = 2
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 657
+ > TAM_POR_CICLO = 231264000
+
+real	1m10.824s
+user	1m8.336s
+sys	0m1.728s
+
+###########################
+NT = 12000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 5256
+ > TOTAL_CICLOS = 2
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 657
+ > TAM_POR_CICLO = 252288000
+
+real	1m18.773s
+user	1m16.229s
+sys	0m1.940s
+
+###########################
+NT = 13000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 3504
+ > TOTAL_CICLOS = 3
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 438
+ > TAM_POR_CICLO = 182208000
+
+real	1m27.810s
+user	1m25.037s
+sys	0m2.032s
+
+###########################
+NT = 14000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 3504
+ > TOTAL_CICLOS = 3
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 438
+ > TAM_POR_CICLO = 196224000
+
+real	1m34.740s
+user	1m31.946s
+sys	0m2.024s
+
+###########################
+NT = 15000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 3504
+ > TOTAL_CICLOS = 3
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 438
+ > TAM_POR_CICLO = 210240000
+
+real	1m42.916s
+user	1m40.030s
+sys	0m2.128s
+
+###########################
+NT = 16000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 3504
+ > TOTAL_CICLOS = 3
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 438
+ > TAM_POR_CICLO = 224256000
+
+real	1m50.181s
+user	1m47.075s
+sys	0m2.180s
+
+###########################
+NT = 17000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 3504
+ > TOTAL_CICLOS = 3
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 438
+ > TAM_POR_CICLO = 238272000
+
+real	1m59.342s
+user	1m55.883s
+sys	0m2.464s
+
+###########################
+NT = 18000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 3504
+ > TOTAL_CICLOS = 3
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 438
+ > TAM_POR_CICLO = 252288000
+
+real	2m6.024s
+user	2m2.472s
+sys	0m2.580s
+
+###########################
+NT = 19000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 2628
+ > TOTAL_CICLOS = 4
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 329
+ > TAM_POR_CICLO = 199728000
+
+real	2m8.244s
+user	2m4.128s
+sys	0m3.028s
+
+###########################
+NT = 20000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 2628
+ > TOTAL_CICLOS = 4
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 329
+ > TAM_POR_CICLO = 210240000
+
+real	2m14.100s
+user	2m9.808s
+sys	0m3.168s
+
+###########################
+NT = 21000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 2628
+ > TOTAL_CICLOS = 4
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 329
+ > TAM_POR_CICLO = 220752000
+
+real	2m22.392s
+user	2m18.045s
+sys	0m3.252s
+
+###########################
+NT = 22000
+
+-----------------------
+--> TEMPO CUDA:
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 2628
+ > TOTAL_CICLOS = 4
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 329
+ > TAM_POR_CICLO = 231264000
+
+real	2m28.309s
+user	2m23.345s
+sys	0m3.576s
+

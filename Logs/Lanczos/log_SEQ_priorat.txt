@@ -1,0 +1,93 @@
+############################
+## LOG GERADO EM: "Ter Out 23 20:08:41 BRST 2012"
+## NO HOST: "priorat"
+## COM OS PARAMETROS: "OP_VERSAO:seq/LISTA_NT:"1000 3000 5000 7000 9000 11000 13000 15000 17000 19000 21000"/ARQ_LOG:logs/log_SEQ_priorat.txt "
+## INICIADO NO TEMPO: "1351030121"
+############################
+
+############################
+## [EXEC]_NT:1000
+make: Nada a ser feito para `seq'.
+
+real	0m37.743s
+user	0m37.069s
+sys	0m0.243s
+############################
+## [EXEC]_NT:3000
+make: Nada a ser feito para `seq'.
+
+real	2m43.812s
+user	2m42.265s
+sys	0m0.491s
+############################
+## [EXEC]_NT:5000
+make: Nada a ser feito para `seq'.
+
+real	4m50.292s
+user	4m47.753s
+sys	0m0.766s
+############################
+## [EXEC]_NT:7000
+make: Nada a ser feito para `seq'.
+
+real	6m57.219s
+user	6m53.629s
+sys	0m1.103s
+############################
+## [EXEC]_NT:9000
+make: Nada a ser feito para `seq'.
+
+real	9m4.189s
+user	8m59.621s
+sys	0m1.353s
+############################
+## [EXEC]_NT:11000
+make: Nada a ser feito para `seq'.
+
+real	11m11.121s
+user	11m5.456s
+sys	0m1.665s
+############################
+## [EXEC]_NT:13000
+make: Nada a ser feito para `seq'.
+
+real	13m17.351s
+user	13m10.656s
+sys	0m2.032s
+############################
+## [EXEC]_NT:15000
+make: Nada a ser feito para `seq'.
+
+real	15m23.821s
+user	15m15.864s
+sys	0m2.313s
+############################
+## [EXEC]_NT:17000
+make: Nada a ser feito para `seq'.
+
+real	17m29.466s
+user	17m20.787s
+sys	0m2.540s
+############################
+## [EXEC]_NT:19000
+make: Nada a ser feito para `seq'.
+
+real	19m37.271s
+user	19m26.063s
+sys	0m2.816s
+############################
+## [EXEC]_NT:21000
+make: Nada a ser feito para `seq'.
+
+real	21m42.161s
+user	21m30.282s
+sys	0m3.176s
+/home/bcc/bnz07/TG_CUDA/Lanczos/v_C-OMP-CUDA/executa.sh: error reading input file: Manipulador de arquivo NFS corrompido
+
+############################
+## EXECUCAO TERMINADA COM SUCESSO
+## TOTAL DE ERROS: "1"
+## TERMINADO NO TEMPO "1351037496"
+## DURACAO TOTAL (sec): "7375"
+## DURACAO TOTAL (min): "122.91666666666666666666"
+############################

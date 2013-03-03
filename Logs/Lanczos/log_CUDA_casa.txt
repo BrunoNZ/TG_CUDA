@@ -1,0 +1,54 @@
+############################
+## LOG GERADO EM: "Ter Dez  4 01:14:17 BRST 2012"
+## NO HOST: "BrunoNZ"
+## COM OS PARAMETROS: "OP_VERSAO:cuda/LISTA_NT:"1000 3000 5000 7000 9000 11000 13000 15000 17000 19000 21000"/ARQ_LOG:logs/log_CUDA_casa.txt "
+## INICIADO NO TEMPO: "1354590857"
+############################
+
+############################
+## [EXEC]_NT:1000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/Lanczos/v_C-OMP-CUDA'
+make: Nada a ser feito para `cuda'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/Lanczos/v_C-OMP-CUDA'
+
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 10512
+ > TOTAL_CICLOS = 1
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 1314
+ > MEM_ENTRADA_POR_CICLO = 42048000
+ > MEM_SAIDA_POR_CICLO = 42048000
+ > MEM_AUX_POR_CICLO = 1692
+ > MEM_TOTAL_POR_CICLO = 84097692
+
+FIM!
+
+real	0m5.907s
+user	0m3.816s
+sys	0m1.296s
+############################
+## [EXEC]_NT:3000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/Lanczos/v_C-OMP-CUDA'
+make: Nada a ser feito para `cuda'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/Lanczos/v_C-OMP-CUDA'
+
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 10512
+ > TOTAL_CICLOS = 1
+ > THREADS_POR_BLOCO = 8
+ > BLOCOS_POR GRID = 1314
+ > MEM_ENTRADA_POR_CICLO = 126144000
+ > MEM_SAIDA_POR_CICLO = 126144000
+ > MEM_AUX_POR_CICLO = 1692
+ > MEM_TOTAL_POR_CICLO = 252289692
+
+FIM!
+
+real	0m26.529s
+user	0m24.038s
+sys	0m1.684s
+############################
+## [EXEC]_NT:5000
+make: Entrando no diretório `/home/bruno/Materias_UFPR/TG_CUDA/Lanczos/v_C-OMP-CUDA'
+make: Nada a ser feito para `cuda'.
+make: Saindo do diretório `/home/bruno/Materias_UFPR/TG_CUDA/Lanczos/v_C-OMP-CUDA'

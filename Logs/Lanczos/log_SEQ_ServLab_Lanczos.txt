@@ -1,0 +1,81 @@
+############################
+## LOG GERADO EM: "Ter Dez 11 16:02:49 BRST 2012"
+## NO HOST: "elbrus"
+## COM OS PARAMETROS: "OP_VERSAO:seq/LISTA_NT:"1000 3000 5000 7000 9000 11000 13000 15000 17000 19000 21000"/ARQ_LOG:log_SEQ_ServLab_Lanczos.txt "
+## INICIADO NO TEMPO: "1355248969"
+############################
+
+############################
+## [EXEC]_NT:1000
+
+real	0m12.308s
+user	0m11.873s
+sys	0m0.060s
+############################
+## [EXEC]_NT:3000
+
+real	0m54.043s
+user	0m52.555s
+sys	0m0.168s
+############################
+## [EXEC]_NT:5000
+
+real	1m35.340s
+user	1m32.650s
+sys	0m0.244s
+############################
+## [EXEC]_NT:7000
+
+real	2m16.882s
+user	2m13.116s
+sys	0m0.316s
+############################
+## [EXEC]_NT:9000
+
+real	2m58.475s
+user	2m53.563s
+sys	0m0.480s
+############################
+## [EXEC]_NT:11000
+
+real	3m39.841s
+user	3m33.969s
+sys	0m0.600s
+############################
+## [EXEC]_NT:13000
+
+real	4m21.055s
+user	4m14.520s
+sys	0m0.648s
+############################
+## [EXEC]_NT:15000
+
+real	5m2.398s
+user	4m54.886s
+sys	0m0.864s
+############################
+## [EXEC]_NT:17000
+
+real	5m44.108s
+user	5m35.369s
+sys	0m1.060s
+############################
+## [EXEC]_NT:19000
+
+real	6m25.632s
+user	6m16.064s
+sys	0m0.964s
+############################
+## [EXEC]_NT:21000
+
+real	7m8.840s
+user	6m56.954s
+sys	0m1.196s
+
+############################
+## EXECUCAO TERMINADA COM SUCESSO
+## TOTAL DE ERROS: "0"
+## TERMINADO NO TEMPO "1355251388"
+## DURACAO TOTAL (sec): "2419"
+## DURACAO TOTAL (min): "40.31666666666666666666"
+############################
