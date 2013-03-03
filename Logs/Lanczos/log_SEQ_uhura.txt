@@ -1,0 +1,93 @@
+
+############################
+## LOG GERADO EM: "Dom Mar  3 15:54:51 BRT 2013"
+## NO HOST: "uhura"
+## COM OS PARAMETROS: "OP_VERSAO:SEQ/LISTA_NT:"1000 3000 5000 7000 9000 11000 13000 15000 17000 19000 21000"/ARQ_LOG:logs/log_SEQ_uhura.txt "
+## INICIADO NO TEMPO: "1362336891"
+############################
+
+############################
+## [EXEC]_NT:1000
+make: Nada a ser feito para `seq'.
+
+real	0m21.105s
+user	0m18.650s
+sys	0m0.090s
+############################
+## [EXEC]_NT:3000
+make: Nada a ser feito para `seq'.
+
+real	1m26.064s
+user	1m21.680s
+sys	0m0.410s
+############################
+## [EXEC]_NT:5000
+make: Nada a ser feito para `seq'.
+
+real	2m32.487s
+user	2m25.130s
+sys	0m0.580s
+############################
+## [EXEC]_NT:7000
+make: Nada a ser feito para `seq'.
+
+real	3m35.146s
+user	3m28.440s
+sys	0m0.840s
+############################
+## [EXEC]_NT:9000
+make: Nada a ser feito para `seq'.
+
+real	4m39.091s
+user	4m31.350s
+sys	0m0.750s
+############################
+## [EXEC]_NT:11000
+make: Nada a ser feito para `seq'.
+
+real	5m43.441s
+user	5m34.480s
+sys	0m0.950s
+############################
+## [EXEC]_NT:13000
+make: Nada a ser feito para `seq'.
+
+real	6m49.856s
+user	6m38.800s
+sys	0m1.700s
+############################
+## [EXEC]_NT:15000
+make: Nada a ser feito para `seq'.
+
+real	7m53.294s
+user	7m41.590s
+sys	0m1.130s
+############################
+## [EXEC]_NT:17000
+make: Nada a ser feito para `seq'.
+
+real	8m56.977s
+user	8m45.060s
+sys	0m2.150s
+############################
+## [EXEC]_NT:19000
+make: Nada a ser feito para `seq'.
+
+real	10m2.457s
+user	9m48.190s
+sys	0m1.900s
+############################
+## [EXEC]_NT:21000
+make: Nada a ser feito para `seq'.
+
+real	11m6.199s
+user	10m51.400s
+sys	0m2.280s
+
+############################
+## EXECUCAO TERMINADA COM SUCESSO
+## TOTAL DE ERROS: "0"
+## TERMINADO NO TEMPO "1362340722"
+## DURACAO TOTAL (sec): "3831"
+## DURACAO TOTAL (min): "63.85000000000000000000"
+############################

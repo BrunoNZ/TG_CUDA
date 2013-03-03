@@ -1,0 +1,166 @@
+
+############################
+## LOG GERADO EM: "Ter Dez 11 22:13:49 BRST 2012"
+## NO HOST: "priorat"
+## COM OS PARAMETROS: "OP_VERSAO:omp/LISTA_NT:"500"/LISTA_PERM:"1000 3000 5000"/ARQ_LOG:"logs/log_OMP_priorat_VARIANDO_NUM_THREADS.log" /LISTA_NUM_THREADS:"8 6 4 2 1" "
+## INICIADO NO TEMPO: "1355271229"
+############################
+
+############################
+## [EXEC]_NT:500/PERM:1000/N_THREADS:8
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 8
+
+
+real	2m20.803s
+user	2m29.283s
+sys	15m48.229s
+############################
+## [EXEC]_NT:500/PERM:1000/N_THREADS:6
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 6
+
+
+real	3m25.482s
+user	3m57.533s
+sys	14m30.055s
+############################
+## [EXEC]_NT:500/PERM:1000/N_THREADS:4
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 4
+
+
+real	1m4.932s
+user	1m30.538s
+sys	2m17.273s
+############################
+## [EXEC]_NT:500/PERM:1000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+
+real	0m32.012s
+user	0m43.464s
+sys	0m15.553s
+############################
+## [EXEC]_NT:500/PERM:1000/N_THREADS:1
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 1
+
+
+real	0m28.495s
+user	0m28.342s
+sys	0m0.147s
+############################
+## [EXEC]_NT:500/PERM:3000/N_THREADS:8
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 8
+
+
+real	6m36.870s
+user	6m52.316s
+sys	44m53.120s
+############################
+## [EXEC]_NT:500/PERM:3000/N_THREADS:6
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 6
+
+
+real	9m27.398s
+user	10m58.987s
+sys	39m41.696s
+############################
+## [EXEC]_NT:500/PERM:3000/N_THREADS:4
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 4
+
+
+real	3m24.185s
+user	4m35.178s
+sys	7m21.213s
+############################
+## [EXEC]_NT:500/PERM:3000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+
+real	1m30.673s
+user	2m9.776s
+sys	0m39.281s
+############################
+## [EXEC]_NT:500/PERM:3000/N_THREADS:1
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 1
+
+
+real	1m25.069s
+user	1m24.644s
+sys	0m0.408s
+############################
+## [EXEC]_NT:500/PERM:5000/N_THREADS:8
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 8
+
+
+real	10m38.846s
+user	11m19.704s
+sys	71m49.347s
+############################
+## [EXEC]_NT:500/PERM:5000/N_THREADS:6
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 6
+
+
+real	15m3.748s
+user	18m3.443s
+sys	62m54.317s
+############################
+## [EXEC]_NT:500/PERM:5000/N_THREADS:4
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 4
+
+
+real	5m27.522s
+user	7m39.626s
+sys	11m38.019s
+############################
+## [EXEC]_NT:500/PERM:5000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+
+real	2m34.443s
+user	3m36.824s
+sys	1m10.090s
+############################
+## [EXEC]_NT:500/PERM:5000/N_THREADS:1
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 1
+
+
+real	2m22.188s
+user	2m21.482s
+sys	0m0.680s
+
+############################
+## EXECUCAO TERMINADA COM SUCESSO
+## TOTAL DE ERROS: "15"
+## TERMINADO NO TEMPO "1355275212"
+## DURACAO TOTAL (sec): "3983"
+## DURACAO TOTAL (min): "66.38333333333333333333"
+############################

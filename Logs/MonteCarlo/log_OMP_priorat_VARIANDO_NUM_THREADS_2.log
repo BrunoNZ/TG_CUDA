@@ -1,0 +1,95 @@
+############################
+## LOG GERADO EM: "Qua Dez 12 10:44:24 BRST 2012"
+## NO HOST: "priorat"
+## COM OS PARAMETROS: "OP_VERSAO:omp/LISTA_NT:"500"/LISTA_PERM:"1000"/ARQ_LOG:"logs/log_OMP_priorat_VARIANDO_NUM_THREADS_2.log" /LISTA_NUM_THREADS:"8 7 6 5 4 3 2 1" "
+## INICIADO NO TEMPO: "1355316264"
+############################
+
+############################
+## [EXEC]_NT:500/PERM:1000/N_THREADS:8
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 8
+
+
+real	2m4.153s
+user	2m15.489s
+sys	13m53.108s
+############################
+## [EXEC]_NT:500/PERM:1000/N_THREADS:7
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 7
+
+
+real	3m10.119s
+user	3m25.563s
+sys	17m17.205s
+############################
+## [EXEC]_NT:500/PERM:1000/N_THREADS:6
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 6
+
+
+real	3m30.111s
+user	3m59.475s
+sys	14m52.127s
+############################
+## [EXEC]_NT:500/PERM:1000/N_THREADS:5
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 5
+
+
+real	1m47.505s
+user	2m20.269s
+sys	5m38.539s
+############################
+## [EXEC]_NT:500/PERM:1000/N_THREADS:4
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 4
+
+
+real	1m3.939s
+user	1m30.752s
+sys	2m14.254s
+############################
+## [EXEC]_NT:500/PERM:1000/N_THREADS:3
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 3
+
+
+real	0m44.512s
+user	1m3.932s
+sys	0m54.215s
+############################
+## [EXEC]_NT:500/PERM:1000/N_THREADS:2
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 2
+
+
+real	0m32.417s
+user	0m43.829s
+sys	0m16.258s
+############################
+## [EXEC]_NT:500/PERM:1000/N_THREADS:1
+
+ > NUMERO DE THREADS DISPONIVEIS: 8
+ > NUMERO DE THREADS USADAS: 1
+
+
+real	0m28.407s
+user	0m28.263s
+sys	0m0.136s
+
+############################
+## EXECUCAO TERMINADA COM SUCESSO
+## TOTAL DE ERROS: "8"
+## TERMINADO NO TEMPO "1355317065"
+## DURACAO TOTAL (sec): "801"
+## DURACAO TOTAL (min): "13.35000000000000000000"
+############################

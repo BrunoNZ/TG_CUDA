@@ -1,0 +1,166 @@
+
+############################
+## LOG GERADO EM: "Sáb Mar  2 14:48:11 BRT 2013"
+## NO HOST: "uhura"
+## COM OS PARAMETROS: "OP_VERSAO:SEQ/LISTA_NT:"100 500 1000 3000 5000"/LISTA_PERM:"1000 3000 5000 7000 9000"/ARQ_LOG:"logs/log_SEQ_uhura.txt" /LISTA_NUM_THREADS:"1" "
+## INICIADO NO TEMPO: "1362246491"
+############################
+
+############################
+## [EXEC]_NT:100/PERM:1000/N_THREADS:1
+
+real	0m3.937s
+user	0m3.790s
+sys	0m0.010s
+############################
+## [EXEC]_NT:100/PERM:3000/N_THREADS:1
+
+real	0m11.396s
+user	0m11.370s
+sys	0m0.000s
+############################
+## [EXEC]_NT:100/PERM:5000/N_THREADS:1
+
+real	0m18.993s
+user	0m18.950s
+sys	0m0.000s
+############################
+## [EXEC]_NT:100/PERM:7000/N_THREADS:1
+
+real	0m26.547s
+user	0m26.490s
+sys	0m0.020s
+############################
+## [EXEC]_NT:100/PERM:9000/N_THREADS:1
+
+real	0m34.141s
+user	0m34.100s
+sys	0m0.000s
+############################
+## [EXEC]_NT:500/PERM:1000/N_THREADS:1
+
+real	0m16.073s
+user	0m15.670s
+sys	0m0.010s
+############################
+## [EXEC]_NT:500/PERM:3000/N_THREADS:1
+
+real	0m47.547s
+user	0m47.500s
+sys	0m0.000s
+############################
+## [EXEC]_NT:500/PERM:5000/N_THREADS:1
+
+real	1m18.284s
+user	1m18.210s
+sys	0m0.000s
+############################
+## [EXEC]_NT:500/PERM:7000/N_THREADS:1
+
+real	1m49.503s
+user	1m49.410s
+sys	0m0.010s
+############################
+## [EXEC]_NT:500/PERM:9000/N_THREADS:1
+
+real	2m20.825s
+user	2m20.700s
+sys	0m0.010s
+############################
+## [EXEC]_NT:1000/PERM:1000/N_THREADS:1
+
+real	0m32.522s
+user	0m32.270s
+sys	0m0.010s
+############################
+## [EXEC]_NT:1000/PERM:3000/N_THREADS:1
+
+real	1m36.652s
+user	1m36.560s
+sys	0m0.010s
+############################
+## [EXEC]_NT:1000/PERM:5000/N_THREADS:1
+
+real	2m42.761s
+user	2m42.640s
+sys	0m0.010s
+############################
+## [EXEC]_NT:1000/PERM:7000/N_THREADS:1
+
+real	3m45.621s
+user	3m45.460s
+sys	0m0.010s
+############################
+## [EXEC]_NT:1000/PERM:9000/N_THREADS:1
+
+real	4m49.818s
+user	4m49.620s
+sys	0m0.010s
+############################
+## [EXEC]_NT:3000/PERM:1000/N_THREADS:1
+
+real	1m50.073s
+user	1m49.240s
+sys	0m0.030s
+############################
+## [EXEC]_NT:3000/PERM:3000/N_THREADS:1
+
+real	5m26.667s
+user	5m26.460s
+sys	0m0.010s
+############################
+## [EXEC]_NT:3000/PERM:5000/N_THREADS:1
+
+real	9m4.103s
+user	9m3.780s
+sys	0m0.010s
+############################
+## [EXEC]_NT:3000/PERM:7000/N_THREADS:1
+
+real	12m43.373s
+user	12m42.900s
+sys	0m0.030s
+############################
+## [EXEC]_NT:3000/PERM:9000/N_THREADS:1
+
+real	16m19.664s
+user	16m19.090s
+sys	0m0.040s
+############################
+## [EXEC]_NT:5000/PERM:1000/N_THREADS:1
+
+real	3m5.828s
+user	3m5.120s
+sys	0m0.050s
+############################
+## [EXEC]_NT:5000/PERM:3000/N_THREADS:1
+
+real	9m25.693s
+user	9m25.330s
+sys	0m0.020s
+############################
+## [EXEC]_NT:5000/PERM:5000/N_THREADS:1
+
+real	15m31.129s
+user	15m30.530s
+sys	0m0.030s
+############################
+## [EXEC]_NT:5000/PERM:7000/N_THREADS:1
+
+real	21m41.744s
+user	21m41.020s
+sys	0m0.020s
+############################
+## [EXEC]_NT:5000/PERM:9000/N_THREADS:1
+
+real	27m51.998s
+user	27m51.030s
+sys	0m0.030s
+
+############################
+## EXECUCAO TERMINADA COM SUCESSO
+## TOTAL DE ERROS: "25"
+## TERMINADO NO TEMPO "1362255167"
+## DURACAO TOTAL (sec): "8676"
+## DURACAO TOTAL (min): "144.60000000000000000000"
+############################
