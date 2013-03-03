@@ -1,0 +1,1 @@
+/home/bruno/Materias_UFPR/TG_CUDA/Implementacao/MonteCarlo/v_C-OMP-CUDA/gera_log.sh
