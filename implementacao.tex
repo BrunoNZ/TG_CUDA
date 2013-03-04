@@ -18,7 +18,7 @@ Diferente da solução com base em OpenMP, a implementação em CUDA possui uma 
 
 Outros fatores importantes a se notar é que essas placas possuem uma memória própria e que a cópia da memória entre o Host e o Device não é feita automaticamente a quantidade, além de que a quantidade dessa memória existente é limitada e não há a possibilidade de expansão. São esses fatores que fazem com que a implementação seja mais difícil, especialmente no caso dos algoritmos estudados os quais, como já explicado, necessitam de uma grande quantidade de memória.
 
-\subsection{Proposta de solução}
+\subsection{Proposta de solução}\label{cap:proposta_solucao}
 
 Uma solução para possibilitar o uso desses algoritmos em qualquer plataforma CUDA, independente do tanto de memória disponível, é processar esses dados em ciclos de processamento, ou seja, processar apenas uma parte dos dados de entrada a cada ciclo. Porém os mesmos são originalmente organizados de forma que os valores dos eixos X e Y fiquem juntos, fazendo com que os valores de uma quadrícula no eixo do tempo fiquem separados, o oposto do que seria o ideal. Isso não é nenhum obstáculo quando pensamos numa execução sequencial do algoritmo onde a quantidade e facilidade de acesso à memória é maior, mas impossibilita a ideia de ciclos de processamentos, pelo fato dos valores estarem separados no eixo do tempo, o que impede que os mesmos sejam repartidos.
 
