@@ -11,21 +11,22 @@
 # NO PRIMEIRO ARQUIVO, E NA SEGUNDA OS TEMPOS RELATIVOS A EXECUCAO
 # A QUAL SERA CALCULADO O SPEEDUP
 
-ARQ_BASE_SPEEDUP=$1
-ARQ_EXEC_SPEEDUP=$2
-
-if [[ $# != 2 ]]; then
+if [[ $# != 3 ]]; then
 	echo -e "Parametros errados! Utilze:"
-	echo -e "$0 [ARQ_BASE_SPEEDUP] [ARQ_EXEC_SPEEDUP]"
+	echo -e "$0 [ARQ_BASE_SPEEDUP] [ARQ_EXEC_SPEEDUP] [COLUNA_TEMPO]"
 	echo -e ""
 	exit 1
 fi
 
+ARQ_BASE_SPEEDUP=$1
+ARQ_EXEC_SPEEDUP=$2
+COLUNA_TEMPO=$3
+
 LISTA_PARAM=$(cat $ARQ_BASE_SPEEDUP | tr -s "\t" " " | cut -d " " -f1)
 
 for P in $LISTA_PARAM; do
-	TEMPO_BASE=$(grep "^${P}" $ARQ_BASE_SPEEDUP | tr -s "\t" " " | cut -d " " -f2 | sed "s/m/#/g; s/s//g")
-	TEMPO_EXEC=$(grep "^${P}" $ARQ_EXEC_SPEEDUP | tr -s "\t" " " | cut -d " " -f2 | sed "s/m/#/g; s/s//g")
+	TEMPO_BASE=$(cat $ARQ_BASE_SPEEDUP | tr -s "\t" " " | grep "^${P}\ "  | cut -d " " -f${COLUNA_TEMPO} | sed "s/m/#/g; s/s//g")
+	TEMPO_EXEC=$(cat $ARQ_EXEC_SPEEDUP | tr -s "\t" " " | grep "^${P}\ "  | cut -d " " -f${COLUNA_TEMPO} | sed "s/m/#/g; s/s//g")
 	
 	MIN_TEMPO_BASE=$(echo $TEMPO_BASE | cut -d "#" -f1)
 	SEG_TEMPO_BASE=$(echo $TEMPO_BASE | cut -d "#" -f2)

@@ -21,7 +21,7 @@ set xtics rotate by -45\
 
 set key left
 
-plot "processados/seq_uhura.lista" using 1:3 title "[SEQ] Intel I7" w l lt 1 lw 4 lc 0, \
-	"processados/omp_priorat_8threads.lista" using 1:3 title "[OMP] AMD Opteron" w l lt 1 lw 4 lc 2, \
-	"processados/omp_servlab_8threads.lista" using 1:3 title "[OMP] Intel I5" w l lt 1 lw 4 lc 1, \
-	"processados/omp_uhura_8threads.lista" using 1:3 title "[OMP] Intel I7" w l lt 1 lw 4 lc 3
+plot "../../Logs/MonteCarlo/processados/seq_uhura.lista" using 1:3 title "[SEQ] Intel I7" w l lt 1 lw 4 lc 0, \
+	"../../Logs/MonteCarlo/processados/omp_priorat_8threads.lista" using 1:3 title "[OMP] AMD Opteron" w l lt 1 lw 4 lc 2, \
+	"../../Logs/MonteCarlo/processados/omp_servlab_8threads.lista" using 1:3 title "[OMP] Intel I5" w l lt 1 lw 4 lc 1, \
+	"../../Logs/MonteCarlo/processados/omp_uhura_8threads.lista" using 1:3 title "[OMP] Intel I7" w l lt 1 lw 4 lc 3

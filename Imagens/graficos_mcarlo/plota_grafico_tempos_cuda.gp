@@ -21,5 +21,5 @@ set xtics rotate by -45\
 
 set key left
 
-plot "processados/seq_uhura.lista" using 1:3 title "[SEQ] Intel I7" w l lt 1 lw 4 lc 0, \
-	"processados/cuda_9600gt.lista" using 1:3 title "[CUDA] NVidia 9600GT" w l lt 1 lw 4 lc 3
+plot "../../Logs/MonteCarlo/processados/seq_uhura.lista" using 1:3 title "[SEQ] Intel I7" w l lt 1 lw 4 lc 0, \
+	"../../Logs/MonteCarlo/processados/cuda_9600gt.lista" using 1:3 title "[CUDA] NVidia 9600GT" w l lt 1 lw 4 lc 3

@@ -15,7 +15,7 @@ Contudo, a principal motivação da implementação paralela desses algoritmos �
 Nos testes da implementação em OpenMP foram utilizados os seguintes processadores:
 
 \begin{itemize}
-\item Intel Dual-Core E5200 - 2.5GHz
+\item AMD Opteron
 \item Intel I5
 \item Intel I7
 \end{itemize}
@@ -27,7 +27,7 @@ Já nos testes da implementação em CUDA foram utilizados as seguintes placas-d
 \item NVidia GTX480 - 1.5GB / 1.4GHz
 \end{itemize}
 
-Além disso, na versão CUDA foi utilizado como parâmetro de execução 8 threads por bloco. O número total de blocos e ciclos foram calculados diretamente pelo programa em relação ao tamanho do dado de entrada. Sendo assim, é perceptível que não foi feita nenhuma calibração mais otimizada. Tal decisão foi feita propositalmente, em vista que tais ajustes podem variar de uma máquina para outra, ou até mesmo de uma entrada para outra, e assumindo que tais programas deverão ser executados por pesquisadores e que os mesmos não teriam tempo e/ou conhecimento para fazer tais ajustes.
+Além disso, na versão CUDA foi utilizado como parâmetro de execução 64 threads por bloco. O número total de blocos e ciclos foram calculados diretamente pelo programa em relação ao tamanho do dado de entrada. Sendo assim, é perceptível que não foi feita nenhuma calibração mais otimizada. Tal decisão foi feita propositalmente em vista que tais ajustes podem variar de uma máquina para outra ou até mesmo de uma entrada para outra, e assumindo que tais programas deverão ser executados por pesquisadores e que os mesmos não teriam tempo e/ou conhecimento para fazer tais ajustes.
 
 Os tempos foram marcados utilizando o comando \texttt{time} do Linux, e portanto são referentes a execução completa do programa, e não só apenas da execução do algoritmo de processamento em si.
 
@@ -57,15 +57,26 @@ lala
 
 \subsection{Resultados obtidos com o algoritmo Teste de Monte Carlo}
 
-Referencia de \ref{fig:grafico_tempo_mcarlo}
+Nos testes do algoritmo de Monte Carlo foram usados como dados de entrada uma matriz de 48 por 56 que contém as informações da quantidade de chuva diária na América do Sul entre os anos de 1979 e 1999, totalizando 7665 valores por série, e uma série de chuvas de um local na África do mesmo comprimento.
+Porém, para questão de comparação, o total de valores usados nos testes foi variado entre 1000 e 5000. Da mesma forma o número de permutações foi variado entre 1000 e 9000.
+
+Nos testes da implementação em OpenMP houve uma grande surpresa, pois o tempo de execução foi incrementado em relação ao tempo de execução sequencial, especialmente ao elevar o número de permutações, como pode ser visto na figura \ref{fig:grafico_tempo_mcarlo_omp}. No entanto, nos testes da implementação em CUDA houve uma drástica redução desse tempo, inclusive ao incrementar o número de permutações, como mostrado na figura \ref{fig:grafico_tempo_mcarlo_cuda}.
+
+Uma teoria que explique tais resultados é que pelo fato da implementação em OpenMP prover de apenas uma memória que é compartilhada entre todas as threads, ao se fazer as permutações das séries são realizadas inúmeras requisições simultâneas de escrita na memória que por sua vez não é capaz de responder todas elas imediatamente. Esse atraso faz com que as threads fiquem ociosas durante um longo tempo até que todas as requisições sejam executadas. Ao aumentar o número de permutações o número de requisições é proporcionalmente incrementado agravando o problema.
+
+Tal problema não ocorre na implementação em CUDA pois a mesma é executada na GPU, que possui uma arquitetura de memória totalmente diferente a qual provêm a cada bloco de threads uma memória própria. Dessa forma as requisições de escrita são distribuídas entre várias memórias independentes reduzindo o congestionamento de requisições.
+
+Para reforçar essa hipótese foi feito alguns testes reduzindo o número de threads usadas na execução da implementação em OpenMP. Esses resultados estão expostos na figura \ref{fig:grafico_speedup_mcarlo_omp_threads}. É perceptível que ao reduzir o número de threads o tempo de execução reduz consideravelmente, pois o total de requisições simultâneas também é reduzida e assim amenizando o problema.
+
+Esses resultados são importantes para demonstrar que a arquitetura atual dos computadores não é a ideal para se executar algoritmos paralelos.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FIGURA
 \begin{figure}[H]
 \centering
-\includegraphics[width=1.0\textwidth]{Imagens/graficos_mcarlo/mcarlo_tempos.png}
+\includegraphics[width=1.0\textwidth]{Imagens/graficos_mcarlo/mcarlo_tempos_omp.png}
 \caption{Gráfico de tempo do algoritmo Monte Carlo}
-\label{fig:grafico_tempo_mcarlo}
+\label{fig:grafico_tempo_mcarlo_omp}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -73,9 +84,39 @@ Referencia de \ref{fig:grafico_tempo_mcarlo}
 % FIGURA
 \begin{figure}[H]
 \centering
-\includegraphics[width=1.0\textwidth]{Imagens/graficos_mcarlo/mcarlo_speedup.png}
+\includegraphics[width=1.0\textwidth]{Imagens/graficos_mcarlo/mcarlo_speedup_omp.png}
 \caption{Gráfico do speedup do algoritmo Monte Carlo}
-\label{fig:grafico_speedup_mcarlo}
+\label{fig:grafico_speedup_mcarlo_omp}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FIGURA
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{Imagens/graficos_mcarlo/mcarlo_tempos_omp_threads.png}
+\caption{Gráfico de tempo do algoritmo Monte Carlo}
+\label{fig:grafico_speedup_mcarlo_omp_threads}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FIGURA
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{Imagens/graficos_mcarlo/mcarlo_tempos_cuda.png}
+\caption{Gráfico de tempo do algoritmo Monte Carlo}
+\label{fig:grafico_tempo_mcarlo_cuda}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FIGURA
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{Imagens/graficos_mcarlo/mcarlo_speedup_cuda.png}
+\caption{Gráfico do speedup do algoritmo Monte Carlo}
+\label{fig:grafico_speedup_mcarlo_cuda}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

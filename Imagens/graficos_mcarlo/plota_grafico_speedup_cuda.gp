@@ -16,4 +16,4 @@ set xtics rotate by -45\
 
 set key left
 
-plot "processados/cuda_9600gt.speedup" using 1:2 title "NVidia 9600GT" w l lt 1 lw 4 lc 3
+plot "../../Logs/MonteCarlo/processados/cuda_9600gt.speedup" using 1:2 title "NVidia 9600GT" w l lt 1 lw 4 lc 3
