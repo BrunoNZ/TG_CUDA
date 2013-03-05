@@ -15,6 +15,13 @@ set xtics rotate by -45\
 
 set key left
 
-plot "../../Logs/MonteCarlo/processados/omp_priorat_8threads.speedup" using 1:2 title "AMD Opteron" w l lt 1 lw 4 lc 2,\
-	"../../Logs/MonteCarlo/processados/omp_servlab_8threads.speedup" using 1:2 title "Intel I5" w l lt 1 lw 4 lc 1,\
-	"../../Logs/MonteCarlo/processados/omp_uhura_8threads.speedup" using 1:2 title "Intel I7" w l lt 1 lw 4 lc 3
+set style line 1 lt 1 lw 4 lc rgb "black"
+set style line 2 lt 1 lw 4 lc rgb "blue"
+set style line 3 lt 1 lw 4 lc rgb "red"
+set style line 4 lt 2 lw 4 lc rgb "green"
+set style line 5 lt 1 lw 4 lc rgb "dark-grey"
+set style line 6 lt 1 lw 4 lc rgb "#1E90FF"
+
+plot "../../Logs/MonteCarlo/processados/omp_servlab_8threads.speedup" using 1:2 w l title "Intel I5" ls 2 ,\
+	"../../Logs/MonteCarlo/processados/omp_uhura_8threads.speedup" using 1:2 w l title "Intel I7" ls 3 ,\
+	"../../Logs/MonteCarlo/processados/omp_priorat_8threads.speedup" using 1:2 w l title "AMD Opteron" ls 4

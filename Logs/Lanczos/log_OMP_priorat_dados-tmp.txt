@@ -1,0 +1,103 @@
+############################
+## LOG GERADO EM: "Seg Mar  4 21:26:01 BRT 2013"
+## NO HOST: "priorat"
+## COM OS PARAMETROS: "OP_VERSAO:OMP/LISTA_NT:"1000 3000 5000 7000 9000 11000 13000 15000 17000 19000 21000"/ARQ_LOG:logs/log_OMP_priorat_dados-tmp.txt "
+## INICIADO NO TEMPO: "1362443161"
+############################
+
+############################
+## [EXEC]_NT:1000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	0m5.914s
+user	0m35.225s
+sys	0m0.283s
+############################
+## [EXEC]_NT:3000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	0m24.621s
+user	2m36.484s
+sys	0m0.862s
+############################
+## [EXEC]_NT:5000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	0m43.651s
+user	4m37.818s
+sys	0m1.177s
+############################
+## [EXEC]_NT:7000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	1m2.285s
+user	6m32.161s
+sys	0m1.533s
+############################
+## [EXEC]_NT:9000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	1m23.738s
+user	8m42.846s
+sys	0m1.753s
+############################
+## [EXEC]_NT:11000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	1m42.767s
+user	10m42.086s
+sys	0m2.164s
+############################
+## [EXEC]_NT:13000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	2m0.928s
+user	12m33.240s
+sys	0m2.562s
+############################
+## [EXEC]_NT:15000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	2m24.330s
+user	15m5.155s
+sys	0m3.025s
+############################
+## [EXEC]_NT:17000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	2m39.957s
+user	16m42.934s
+sys	0m3.156s
+############################
+## [EXEC]_NT:19000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	2m59.928s
+user	18m48.056s
+sys	0m3.805s
+############################
+## [EXEC]_NT:21000
+make: Nada a ser feito para `omp'.
+NUMERO TOTAL DE THREADS: 8
+
+real	3m18.290s
+user	20m48.862s
+sys	0m4.084s
+
+############################
+## EXECUCAO TERMINADA COM SUCESSO
+## TOTAL DE ERROS: "0"
+## TERMINADO NO TEMPO "1362444288"
+## DURACAO TOTAL (sec): "1127"
+## DURACAO TOTAL (min): "18.78333333333333333333"
+############################

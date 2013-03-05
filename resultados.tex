@@ -14,18 +14,34 @@ Contudo, a principal motivação da implementação paralela desses algoritmos �
 
 Nos testes da implementação em OpenMP foram utilizados os seguintes processadores:
 
-\begin{itemize}
-\item AMD Opteron
-\item Intel I5
-\item Intel I7
-\end{itemize}
+\begin{table}[H]
+\caption{Modelos CPU}
+\begin{center}
+\begin{tabular}{cccc}
+ & \textbf{AMD Opteron} & \textbf{Intel I5} & \textbf{Intel I7} \\
+\hline\hline
+\textbf{Clock}				& 2.8 GHz	& 3.3 Ghz	& 3.0 Ghz \\
+\textbf{Total de Threads}	& 8			& 4			& 8
+\end{tabular} 
+\end{center}
+\end{table}
 
 Já nos testes da implementação em CUDA foram utilizados as seguintes placas-de-vídeo:
 
-\begin{itemize}
-\item NVidia	 9600GT - 512MB / 900MHz
-\item NVidia GTX480 - 1.5GB / 1.4GHz
-\end{itemize}
+\begin{table}[H]
+\caption{Modelos GPU}
+\begin{center}
+\begin{tabular}{ccc}
+ & \textbf{NVidia 9600GT} & \textbf{NVidia GTX480}\\
+\hline\hline
+\textbf{Clock}				& 1.96 GHz	& 1.4 GHz \\
+\textbf{Total Memória}		& 512 MB		& 1536 MB \\
+\textbf{Clock da Memória}	& 900 Mhz	& 1848 Mhz \\
+\textbf{CUDA Cores}			& 64			& 480 \\
+\textbf{Threads por bloco}	& 512		& 1024
+\end{tabular} 
+\end{center}
+\end{table}
 
 Além disso, na versão CUDA foi utilizado como parâmetro de execução 64 threads por bloco. O número total de blocos e ciclos foram calculados diretamente pelo programa em relação ao tamanho do dado de entrada. Sendo assim, é perceptível que não foi feita nenhuma calibração mais otimizada. Tal decisão foi feita propositalmente em vista que tais ajustes podem variar de uma máquina para outra ou até mesmo de uma entrada para outra, e assumindo que tais programas deverão ser executados por pesquisadores e que os mesmos não teriam tempo e/ou conhecimento para fazer tais ajustes.
 
@@ -33,7 +49,9 @@ Os tempos foram marcados utilizando o comando \texttt{time} do Linux, e portanto
 
 \subsection{Resultados obtidos com o algoritmo Filtro de Lanczos}
 
-lala
+Nos testes do algoritmo Filtro de Lanczos foi usado como dado de entrada uma matriz de 144 por 73 que contém as informações da temperatura diária de todo o globo entre 1950 e 2011, totalizando aproximadamente 22000 valores. Desse total, foram usados entre 1000 e 21000 valores nos testes realizados.
+
+Nas duas implementações houve uma grande redução do tempo de execução em relação ao tempo da execução sequencial do mesmo, como demonstrado na figura \ref{fig:grafico_tempo_lanczos}. O melhor resultado foi obtido na execução da implementação em CUDA na GPU GTX480, a qual obteve um speedup de 20 vezes em relação a execução sequencial numa CPU Intel I7.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FIGURA
@@ -64,7 +82,7 @@ Nos testes da implementação em OpenMP houve uma grande surpresa, pois o tempo 
 
 Uma teoria que explique tais resultados é que pelo fato da implementação em OpenMP prover de apenas uma memória que é compartilhada entre todas as threads, ao se fazer as permutações das séries são realizadas inúmeras requisições simultâneas de escrita na memória que por sua vez não é capaz de responder todas elas imediatamente. Esse atraso faz com que as threads fiquem ociosas durante um longo tempo até que todas as requisições sejam executadas. Ao aumentar o número de permutações o número de requisições é proporcionalmente incrementado agravando o problema.
 
-Tal problema não ocorre na implementação em CUDA pois a mesma é executada na GPU, que possui uma arquitetura de memória totalmente diferente a qual provêm a cada bloco de threads uma memória própria. Dessa forma as requisições de escrita são distribuídas entre várias memórias independentes reduzindo o congestionamento de requisições.
+Tal problema não ocorre na implementação em CUDA pois a mesma é executada na GPU, que possui uma arquitetura de memória totalmente diferente a qual provêm a cada thread diversos níveis de memória, incluindo uma própria, como descrito em \cite{cuda_guide}. Dessa forma as requisições de escrita são distribuídas entre várias memórias independentes reduzindo o congestionamento de requisições.
 
 Para reforçar essa hipótese foi feito alguns testes reduzindo o número de threads usadas na execução da implementação em OpenMP. Esses resultados estão expostos na figura \ref{fig:grafico_speedup_mcarlo_omp_threads}. É perceptível que ao reduzir o número de threads o tempo de execução reduz consideravelmente, pois o total de requisições simultâneas também é reduzida e assim amenizando o problema.
 

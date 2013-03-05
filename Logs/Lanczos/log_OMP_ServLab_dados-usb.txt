@@ -1,0 +1,93 @@
+
+############################
+## LOG GERADO EM: "Seg Mar  4 13:36:05 BRT 2013"
+## NO HOST: "meteoro1"
+## COM OS PARAMETROS: "OP_VERSAO:OMP/LISTA_NT:"1000 3000 5000 7000 9000 11000 13000 15000 17000 19000 21000"/ARQ_LOG:logs/log_OMP_ServLab_dados-usb.txt "
+## INICIADO NO TEMPO: "1362414964"
+############################
+
+############################
+## [EXEC]_NT:1000
+NUMERO TOTAL DE THREADS: 4
+
+real	0m5.974s
+user	0m14.805s
+sys	0m0.112s
+############################
+## [EXEC]_NT:3000
+NUMERO TOTAL DE THREADS: 4
+
+real	0m31.770s
+user	1m5.280s
+sys	0m0.220s
+############################
+## [EXEC]_NT:5000
+NUMERO TOTAL DE THREADS: 4
+
+real	0m57.818s
+user	1m56.147s
+sys	0m0.536s
+############################
+## [EXEC]_NT:7000
+NUMERO TOTAL DE THREADS: 4
+
+real	1m25.314s
+user	2m53.595s
+sys	0m0.632s
+############################
+## [EXEC]_NT:9000
+NUMERO TOTAL DE THREADS: 4
+
+real	1m46.759s
+user	3m36.810s
+sys	0m0.756s
+############################
+## [EXEC]_NT:11000
+NUMERO TOTAL DE THREADS: 4
+
+real	2m14.392s
+user	4m27.685s
+sys	0m0.924s
+############################
+## [EXEC]_NT:13000
+NUMERO TOTAL DE THREADS: 4
+
+real	2m38.030s
+user	5m18.740s
+sys	0m1.220s
+############################
+## [EXEC]_NT:15000
+NUMERO TOTAL DE THREADS: 4
+
+real	2m58.986s
+user	6m8.847s
+sys	0m1.308s
+############################
+## [EXEC]_NT:17000
+NUMERO TOTAL DE THREADS: 4
+
+real	3m27.307s
+user	6m59.606s
+sys	0m1.356s
+############################
+## [EXEC]_NT:19000
+NUMERO TOTAL DE THREADS: 4
+
+real	3m46.945s
+user	7m50.261s
+sys	0m1.624s
+############################
+## [EXEC]_NT:21000
+NUMERO TOTAL DE THREADS: 4
+
+real	4m9.210s
+user	8m41.141s
+sys	0m1.708s
+
+############################
+## EXECUCAO TERMINADA COM SUCESSO
+## TOTAL DE ERROS: "0"
+## TERMINADO NO TEMPO "1362416409"
+## DURACAO TOTAL (sec): "1445"
+## DURACAO TOTAL (min): "24.08333333333333333333"
+############################
