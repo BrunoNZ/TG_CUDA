@@ -23,4 +23,4 @@ set style line 4 lt 2 lw 4 lc rgb "green"
 set style line 5 lt 1 lw 4 lc rgb "dark-grey"
 set style line 6 lt 1 lw 4 lc rgb "#1E90FF"
 
-plot "../../Logs/MonteCarlo/processados/cuda_9600gt.speedup" using 1:2 w l title "NVidia 9600GT" ls 1
+plot "../../Logs/MonteCarlo/processados/cuda_9600gt.speedup" using 1:2 w l title "NVidia 9600GT" ls 2

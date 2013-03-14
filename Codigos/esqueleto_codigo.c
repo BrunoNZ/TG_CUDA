@@ -1,3 +1,5 @@
+#include "esqueleto_codigo.h"
+
 //VARIAVEIS GLOBAIS:
 parametros param;
 parametros_exec param_exec;
@@ -7,9 +9,6 @@ float *h_saida = NULL;
 
 float *d_entrada = NULL;
 float *d_saida = NULL;
-
-//DEFINICAO DO NUMERO DE THREADS POR BLOCO
-#define THREADS_POR_BLOCO 64
 
 void desaloca_variaveis(){
 	if (h_entrada != NULL) free(h_entrada);

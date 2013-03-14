@@ -29,4 +29,4 @@ set style line 5 lt 1 lw 4 lc rgb "dark-grey"
 set style line 6 lt 1 lw 4 lc rgb "#1E90FF"
 
 plot "../../Logs/MonteCarlo/processados/seq_uhura.lista" using 1:3 w l title "[SEQ] Intel I7" ls 1 ,\
-	"../../Logs/MonteCarlo/processados/cuda_9600gt.lista" using 1:3 w l title "[CUDA] NVidia 9600GT" ls 1
+	"../../Logs/MonteCarlo/processados/cuda_9600gt.lista" using 1:3 w l title "[CUDA] NVidia 9600GT" ls 2
