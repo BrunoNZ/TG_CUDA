@@ -31,14 +31,14 @@ Já nos testes da implementação em CUDA foram utilizados as seguintes placas-d
 \begin{table}[H]
 \caption{Modelos GPU}
 \begin{center}
-\begin{tabular}{ccc}
- & \textbf{NVidia 9600GT} & \textbf{NVidia GTX480}\\
+\begin{tabular}{ccccc}
+ & \textbf{9600GT} & \textbf{GTX480} & \textbf{Tesla C1060} & \textbf{Tesla C2050}\\
 \hline\hline
-\textbf{Clock}				& 1.96 GHz	& 1.4 GHz \\
-\textbf{Total Memória}		& 512 MB		& 1536 MB \\
-\textbf{Clock da Memória}	& 900 Mhz	& 1848 Mhz \\
-\textbf{CUDA Cores}			& 64			& 480 \\
-\textbf{Threads por bloco}	& 512		& 1024
+\textbf{Clock}				& 1.96 GHz	& 1.4 GHz 	& 1.3 GHz	& 1.15 GHz \\
+\textbf{Total Memória}		& 512 MB		& 1536 MB	& 4096 MB	& 2687 MB \\
+\textbf{Clock da Memória}	& 900 Mhz	& 1848 Mhz 	& 800 Mhz	& 1500 Mhz \\
+\textbf{CUDA Cores}			& 64			& 480		& ???		& ??? \\
+\textbf{Threads por bloco}	& 512		& 1024		& 512		& 1024
 \end{tabular} 
 \end{center}
 \end{table}
@@ -51,15 +51,15 @@ Os tempos foram marcados utilizando o comando \texttt{time} do Linux, e portanto
 
 Nos testes do algoritmo Filtro de Lanczos foi usado como dado de entrada uma matriz de 144 por 73 que contém as informações da temperatura diária de todo o globo entre 1950 e 2011, totalizando aproximadamente 22000 valores. Desse total, foram usados entre 1000 e 21000 valores nos testes realizados.
 
-Nas duas implementações houve uma grande redução do tempo de execução em relação ao tempo da execução sequencial do mesmo, como demonstrado na figura \ref{fig:grafico_tempo_lanczos}. O melhor resultado foi obtido na execução da implementação em CUDA na GPU GTX480, a qual obteve um speedup de 20 vezes em relação a execução sequencial numa CPU Intel I7.
+Nas duas implementações houve uma grande redução do tempo de execução em relação ao tempo da execução sequencial do mesmo, como demonstrado nas figuras \ref{fig:grafico_speedup_lanczos_omp} e \ref{fig:grafico_speedup_lanczos_cuda} . O melhor resultado foi obtido na execução da implementação em CUDA na GPU GTX480, a qual obteve um speedup de 20 vezes em relação a execução sequencial numa CPU Intel I7.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FIGURA
 \begin{figure}[H]
 \centering
-\includegraphics[width=1.0\textwidth]{Imagens/graficos_lanczos/lanczos_tempos.png}
+\includegraphics[width=1.0\textwidth]{Imagens/graficos_lanczos/lanczos_tempos_omp.png}
 \caption{Gráfico de tempo do algoritmo Filtro de Lanczos}
-\label{fig:grafico_tempo_lanczos}
+\label{fig:grafico_tempo_lanczos_omp}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -67,9 +67,29 @@ Nas duas implementações houve uma grande redução do tempo de execução em r
 % FIGURA
 \begin{figure}[H]
 \centering
-\includegraphics[width=1.0\textwidth]{Imagens/graficos_lanczos/lanczos_speedup.png}
+\includegraphics[width=1.0\textwidth]{Imagens/graficos_lanczos/lanczos_speedup_omp.png}
 \caption{Gráfico do speedup do algoritmo Filtro de Lanczos}
-\label{fig:grafico_speedup_lanczos}
+\label{fig:grafico_speedup_lanczos_omp}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FIGURA
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{Imagens/graficos_lanczos/lanczos_tempos_cuda.png}
+\caption{Gráfico de tempo do algoritmo Filtro de Lanczos}
+\label{fig:grafico_tempo_lanczos_cuda}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FIGURA
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{Imagens/graficos_lanczos/lanczos_speedup_cuda.png}
+\caption{Gráfico do speedup do algoritmo Filtro de Lanczos}
+\label{fig:grafico_speedup_lanczos_cuda}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

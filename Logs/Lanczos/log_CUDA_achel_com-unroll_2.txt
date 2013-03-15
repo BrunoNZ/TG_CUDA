@@ -1,0 +1,192 @@
+
+############################
+## LOG GERADO EM: "Thu Mar 14 22:17:34 BRT 2013"
+## NO HOST: "achel"
+## COM OS PARAMETROS: "OP_VERSAO:CUDA/LISTA_NT:"1000 3000 5000 7000 9000 11000 13000 15000 17000 19000 21000"/ARQ_LOG:logs/log_CUDA_achel_com-unroll_2.txt "
+## INICIADO NO TEMPO: "1363310254"
+############################
+
+############################
+## [EXEC]_NT:1000
+make: Nothing to be done for `cuda'.
+
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 10512
+ > TOTAL_CICLOS = 1
+ > THREADS_POR_BLOCO = 16
+ > BLOCOS_POR GRID = 657
+ > TAM_POR_CICLO = 42048000
+
+FIM!
+
+real	0m3.658s
+user	0m0.616s
+sys	0m1.580s
+############################
+## [EXEC]_NT:3000
+make: Nothing to be done for `cuda'.
+
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 10512
+ > TOTAL_CICLOS = 1
+ > THREADS_POR_BLOCO = 16
+ > BLOCOS_POR GRID = 657
+ > TAM_POR_CICLO = 126144000
+
+FIM!
+
+real	0m6.290s
+user	0m2.780s
+sys	0m2.072s
+############################
+## [EXEC]_NT:5000
+make: Nothing to be done for `cuda'.
+
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 10512
+ > TOTAL_CICLOS = 1
+ > THREADS_POR_BLOCO = 16
+ > BLOCOS_POR GRID = 657
+ > TAM_POR_CICLO = 210240000
+
+FIM!
+
+real	0m8.819s
+user	0m5.128s
+sys	0m2.252s
+############################
+## [EXEC]_NT:7000
+make: Nothing to be done for `cuda'.
+
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 10512
+ > TOTAL_CICLOS = 1
+ > THREADS_POR_BLOCO = 16
+ > BLOCOS_POR GRID = 657
+ > TAM_POR_CICLO = 294336000
+
+FIM!
+
+real	0m11.575s
+user	0m7.696s
+sys	0m2.436s
+############################
+## [EXEC]_NT:9000
+make: Nothing to be done for `cuda'.
+
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 10512
+ > TOTAL_CICLOS = 1
+ > THREADS_POR_BLOCO = 16
+ > BLOCOS_POR GRID = 657
+ > TAM_POR_CICLO = 378432000
+
+FIM!
+
+real	0m14.423s
+user	0m10.433s
+sys	0m2.516s
+############################
+## [EXEC]_NT:11000
+make: Nothing to be done for `cuda'.
+
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 10512
+ > TOTAL_CICLOS = 1
+ > THREADS_POR_BLOCO = 16
+ > BLOCOS_POR GRID = 657
+ > TAM_POR_CICLO = 462528000
+
+FIM!
+
+real	0m17.519s
+user	0m13.465s
+sys	0m2.592s
+############################
+## [EXEC]_NT:13000
+make: Nothing to be done for `cuda'.
+
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 10512
+ > TOTAL_CICLOS = 1
+ > THREADS_POR_BLOCO = 16
+ > BLOCOS_POR GRID = 657
+ > TAM_POR_CICLO = 546624000
+
+FIM!
+
+real	0m21.169s
+user	0m17.069s
+sys	0m2.720s
+############################
+## [EXEC]_NT:15000
+make: Nothing to be done for `cuda'.
+
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 10512
+ > TOTAL_CICLOS = 1
+ > THREADS_POR_BLOCO = 16
+ > BLOCOS_POR GRID = 657
+ > TAM_POR_CICLO = 630720000
+
+FIM!
+
+real	0m23.181s
+user	0m19.025s
+sys	0m2.776s
+############################
+## [EXEC]_NT:17000
+make: Nothing to be done for `cuda'.
+
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 10512
+ > TOTAL_CICLOS = 1
+ > THREADS_POR_BLOCO = 16
+ > BLOCOS_POR GRID = 657
+ > TAM_POR_CICLO = 714816000
+
+FIM!
+
+real	0m25.085s
+user	0m20.845s
+sys	0m2.800s
+############################
+## [EXEC]_NT:19000
+make: Nothing to be done for `cuda'.
+
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 10512
+ > TOTAL_CICLOS = 1
+ > THREADS_POR_BLOCO = 16
+ > BLOCOS_POR GRID = 657
+ > TAM_POR_CICLO = 798912000
+
+FIM!
+
+real	0m27.913s
+user	0m23.549s
+sys	0m2.928s
+############################
+## [EXEC]_NT:21000
+make: Nothing to be done for `cuda'.
+
+PARAMETROS DE EXECUCAO:
+ > TOTAL_POS = 10512
+ > TOTAL_CICLOS = 1
+ > THREADS_POR_BLOCO = 16
+ > BLOCOS_POR GRID = 657
+ > TAM_POR_CICLO = 883008000
+
+FIM!
+
+real	0m31.054s
+user	0m26.606s
+sys	0m2.964s
+
+############################
+## EXECUCAO TERMINADA COM SUCESSO
+## TOTAL DE ERROS: "0"
+## TERMINADO NO TEMPO "1363310445"
+## DURACAO TOTAL (sec): "191"
+## DURACAO TOTAL (min): "3.18333333333333333333"
+############################
