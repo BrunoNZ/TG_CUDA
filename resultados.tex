@@ -1,6 +1,6 @@
 \chapter{Resultados}
 
-Além da análise da facilidade de uso e implementação paralela desses algoritmos, para analisar o custo-benefício real das duas implementações é preciso primeiramente verificar se os resultados obtidos são corretos, e posteriormente o quão grande foi a redução do tempo de execução comparado a versão sequencial dos algoritmos. Nesse capítulo será estudado esses dois fatores.
+Para analisar o tempo de execução real das duas implementações é preciso primeiramente verificar se os resultados obtidos são corretos, e posteriormente verificar o quão grande foi a redução do tempo de execução comparado a versão sequencial dos algoritmos. Nesse capítulo serão estudados esses dois fatores.
 
 \section{Autenticação dos resultados}
 
@@ -10,7 +10,7 @@ Por esse motivo, o pequeno número de alterações feitas no código é tão imp
 
 \section{Avaliação do tempo de execução}
 
-Contudo, a principal motivação da implementação paralela desses algoritmos é a redução do tempo de execução e se tal melhora faz valer todo o esforço. Para comparar o desempenho das implementações em OpenMP e CUDA com a implementação sequencial foram realizados diversos testes, com diferentes parâmetros, e em diferentes configurações de Hardware, com o intuito de medir o tempo real de execução dos mesmos para então verificar se houve uma redução significativa desse tempo.
+Contudo, a principal motivação da implementação paralela desses algoritmos é a redução do tempo de execução. Para comparar o desempenho das implementações em OpenMP e CUDA com a implementação sequencial foram realizados diversos testes, com diferentes parâmetros, e em diferentes configurações de Hardware, com o intuito de medir o tempo real de execução dos mesmos para então verificar se houve uma redução significativa desse tempo.
 
 Nos testes da implementação em OpenMP foram utilizados os seguintes processadores:
 
@@ -21,7 +21,7 @@ Nos testes da implementação em OpenMP foram utilizados os seguintes processado
  & \textbf{AMD Opteron} & \textbf{Intel I5} & \textbf{Intel I7} \\
 \hline\hline
 \textbf{Clock}				& 2.8 GHz	& 3.3 Ghz	& 3.0 Ghz \\
-\textbf{Total de Threads}	& 8			& 4			& 8
+\textbf{Total de núcleos}	& 8			& 4			& 8
 \end{tabular} 
 \end{center}
 \end{table}
@@ -37,29 +37,29 @@ Já nos testes da implementação em CUDA foram utilizados as seguintes placas-d
 \textbf{Clock}				& 1.96 GHz	& 1.4 GHz 	& 1.3 GHz	& 1.15 GHz \\
 \textbf{Total Memória}		& 512 MB		& 1536 MB	& 4096 MB	& 2687 MB \\
 \textbf{Clock da Memória}	& 900 Mhz	& 1848 Mhz 	& 800 Mhz	& 1500 Mhz \\
-\textbf{CUDA Cores}			& 64			& 480		& ???		& ??? \\
+\textbf{Núcleos CUDA}		& 64			& 480		& 240		& 448 \\
 \textbf{Threads por bloco}	& 512		& 1024		& 512		& 1024
 \end{tabular} 
 \end{center}
 \end{table}
 
-Além disso, na versão CUDA foi utilizado como parâmetro de execução 64 threads por bloco. O número total de blocos e ciclos foram calculados diretamente pelo programa em relação ao tamanho do dado de entrada. Sendo assim, é perceptível que não foi feita nenhuma calibração mais otimizada. Tal decisão foi feita propositalmente em vista que tais ajustes podem variar de uma máquina para outra ou até mesmo de uma entrada para outra, e assumindo que tais programas deverão ser executados por pesquisadores e que os mesmos não teriam tempo e/ou conhecimento para fazer tais ajustes.
+Além disso, na versão CUDA foi utilizado como parâmetro de execução 16 threads por bloco. O número total de blocos e ciclos foram calculados diretamente pelo programa em relação ao tamanho do dado de entrada. Sendo assim, é perceptível que não foi feita nenhuma calibração mais otimizada. Tal decisão foi feita propositalmente em vista que tais ajustes podem variar de uma máquina para outra ou até mesmo de uma entrada para outra, e assumindo que tais programas deverão ser executados por pesquisadores e que os mesmos não teriam tempo e/ou conhecimento para fazer tais ajustes.
 
 Os tempos foram marcados utilizando o comando \texttt{time} do Linux, e portanto são referentes a execução completa do programa, e não só apenas da execução do algoritmo de processamento em si.
 
 \subsection{Resultados obtidos com o algoritmo Filtro de Lanczos}
 
-Nos testes do algoritmo Filtro de Lanczos foi usado como dado de entrada uma matriz de 144 por 73 que contém as informações da temperatura diária de todo o globo entre 1950 e 2011, totalizando aproximadamente 22000 valores. Desse total, foram usados entre 1000 e 21000 valores nos testes realizados.
+Nos testes do algoritmo Filtro de Lanczos foi usado como dado de entrada uma matriz de 144 por 73 que contém as informações da temperatura diária de todo o globo entre 1950 e 2011, totalizando aproximadamente 22000 valores. Desse total, foram usados entre 5000 e 21000 valores nos testes realizados.
 
-Nas duas implementações houve uma grande redução do tempo de execução em relação ao tempo da execução sequencial do mesmo, como demonstrado nas figuras \ref{fig:grafico_speedup_lanczos_omp} e \ref{fig:grafico_speedup_lanczos_cuda} . O melhor resultado foi obtido na execução da implementação em CUDA na GPU GTX480, a qual obteve um speedup de 20 vezes em relação a execução sequencial numa CPU Intel I7.
+Nas duas implementações houve uma grande redução do tempo de execução em relação ao tempo da execução sequencial do mesmo, como demonstrado nas figuras \ref{fig:graficos_lanczos_cuda} e \ref{fig:graficos_lanczos_omp}. O melhor resultado foi obtido na execução da implementação em CUDA na GPU GTX480, a qual obteve um speedup de trinta vezes em relação a execução sequencial numa CPU Intel I7. Com a implementação em OpenMP se obteve uma redução de apenas três vezes.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FIGURA
 \begin{figure}[H]
 \centering
-\includegraphics[width=1.0\textwidth]{Imagens/graficos_lanczos/lanczos_tempos_omp.png}
-\caption{Gráfico de tempo do algoritmo Filtro de Lanczos}
-\label{fig:grafico_tempo_lanczos_omp}
+\includegraphics[]{Imagens/graficos_lanczos/lanczos_cuda.png}
+\caption{Gráficos do tempo de execução e speedup da implementação em CUDA do algoritmo Filtro de Lanczos}
+\label{fig:graficos_lanczos_cuda}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -67,29 +67,9 @@ Nas duas implementações houve uma grande redução do tempo de execução em r
 % FIGURA
 \begin{figure}[H]
 \centering
-\includegraphics[width=1.0\textwidth]{Imagens/graficos_lanczos/lanczos_speedup_omp.png}
-\caption{Gráfico do speedup do algoritmo Filtro de Lanczos}
-\label{fig:grafico_speedup_lanczos_omp}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% FIGURA
-\begin{figure}[H]
-\centering
-\includegraphics[width=1.0\textwidth]{Imagens/graficos_lanczos/lanczos_tempos_cuda.png}
-\caption{Gráfico de tempo do algoritmo Filtro de Lanczos}
-\label{fig:grafico_tempo_lanczos_cuda}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% FIGURA
-\begin{figure}[H]
-\centering
-\includegraphics[width=1.0\textwidth]{Imagens/graficos_lanczos/lanczos_speedup_cuda.png}
-\caption{Gráfico do speedup do algoritmo Filtro de Lanczos}
-\label{fig:grafico_speedup_lanczos_cuda}
+\includegraphics[]{Imagens/graficos_lanczos/lanczos_omp.png}
+\caption{Gráficos do tempo de execução e speedup da implementação em OpenMP do algoritmo Filtro de Lanczos}
+\label{fig:graficos_lanczos_omp}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -98,66 +78,48 @@ Nas duas implementações houve uma grande redução do tempo de execução em r
 Nos testes do algoritmo de Monte Carlo foram usados como dados de entrada uma matriz de 48 por 56 que contém as informações da quantidade de chuva diária na América do Sul entre os anos de 1979 e 1999, totalizando 7665 valores por série, e uma série de chuvas de um local na África do mesmo comprimento.
 Porém, para questão de comparação, o total de valores usados nos testes foi variado entre 1000 e 5000. Da mesma forma o número de permutações foi variado entre 1000 e 9000.
 
-Nos testes da implementação em OpenMP houve uma grande surpresa, pois o tempo de execução foi incrementado em relação ao tempo de execução sequencial, especialmente ao elevar o número de permutações, como pode ser visto na figura \ref{fig:grafico_tempo_mcarlo_omp}. No entanto, nos testes da implementação em CUDA houve uma drástica redução desse tempo, inclusive ao incrementar o número de permutações, como mostrado na figura \ref{fig:grafico_tempo_mcarlo_cuda}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FIGURA
+\begin{figure}[H]
+\centering
+\includegraphics[]{Imagens/graficos_mcarlo/mcarlo_cuda.png}
+\caption{Gráficos do tempo de execução e speedup da implementação em CUDA do algoritmo de Monte Carlo}
+\label{fig:graficos_mcarlo_cuda}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Nos testes da implementação em OpenMP houve uma grande surpresa, pois o tempo de execução foi incrementado em relação ao tempo de execução sequencial, especialmente ao elevar o número de permutações, como pode ser visto na figura \ref{fig:grafico_mcarlo_omp}. No entanto, nos testes da implementação em CUDA houve uma drástica redução desse tempo, inclusive ao incrementar o número de permutações, como mostrado na figura \ref{fig:graficos_mcarlo_cuda}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FIGURA
+\begin{figure}[H]
+\centering
+\includegraphics[]{Imagens/graficos_mcarlo/mcarlo_omp.png}
+\caption{Gráfico do tempo de execução da implementação em OpenMP do algoritmo Monte Carlo}
+\label{fig:grafico_mcarlo_omp}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Uma teoria que explique tais resultados é que pelo fato da implementação em OpenMP prover de apenas uma memória que é compartilhada entre todas as threads, ao se fazer as permutações das séries são realizadas inúmeras requisições simultâneas de escrita na memória que por sua vez não é capaz de responder todas elas imediatamente. Esse atraso faz com que as threads fiquem ociosas durante um longo tempo até que todas as requisições sejam executadas. Ao aumentar o número de permutações o número de requisições é proporcionalmente incrementado agravando o problema.
 
 Tal problema não ocorre na implementação em CUDA pois a mesma é executada na GPU, que possui uma arquitetura de memória totalmente diferente a qual provêm a cada thread diversos níveis de memória, incluindo uma própria, como descrito em \cite{cuda_guide}. Dessa forma as requisições de escrita são distribuídas entre várias memórias independentes reduzindo o congestionamento de requisições.
 
-Para reforçar essa hipótese foi feito alguns testes reduzindo o número de threads usadas na execução da implementação em OpenMP. Esses resultados estão expostos na figura \ref{fig:grafico_speedup_mcarlo_omp_threads}. É perceptível que ao reduzir o número de threads o tempo de execução reduz consideravelmente, pois o total de requisições simultâneas também é reduzida e assim amenizando o problema.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FIGURA
+\begin{figure}[H]
+\centering
+\includegraphics[]{Imagens/graficos_mcarlo/mcarlo_omp-threads.png}
+\caption{Gráfico do tempo de execução da implementação em OpenMP do algoritmo Monte Carlo com a variação do número de threads}
+\label{fig:grafico_mcarlo_omp_threads}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Para reforçar essa hipótese foi feito alguns testes reduzindo o número de threads usadas na execução da implementação em OpenMP. Esses resultados estão expostos na figura \ref{fig:grafico_mcarlo_omp_threads}. É perceptível que ao reduzir o número de threads o tempo de execução reduz consideravelmente, pois o total de requisições simultâneas também é reduzida e assim amenizando o problema.
 
 Esses resultados são importantes para demonstrar que a arquitetura atual dos computadores não é a ideal para se executar algoritmos paralelos.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% FIGURA
-\begin{figure}[H]
-\centering
-\includegraphics[width=1.0\textwidth]{Imagens/graficos_mcarlo/mcarlo_tempos_omp.png}
-\caption{Gráfico de tempo do algoritmo Monte Carlo}
-\label{fig:grafico_tempo_mcarlo_omp}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% FIGURA
-\begin{figure}[H]
-\centering
-\includegraphics[width=1.0\textwidth]{Imagens/graficos_mcarlo/mcarlo_speedup_omp.png}
-\caption{Gráfico do speedup do algoritmo Monte Carlo}
-\label{fig:grafico_speedup_mcarlo_omp}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% FIGURA
-\begin{figure}[H]
-\centering
-\includegraphics[width=1.0\textwidth]{Imagens/graficos_mcarlo/mcarlo_tempos_omp_threads.png}
-\caption{Gráfico de tempo do algoritmo Monte Carlo}
-\label{fig:grafico_speedup_mcarlo_omp_threads}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% FIGURA
-\begin{figure}[H]
-\centering
-\includegraphics[width=1.0\textwidth]{Imagens/graficos_mcarlo/mcarlo_tempos_cuda.png}
-\caption{Gráfico de tempo do algoritmo Monte Carlo}
-\label{fig:grafico_tempo_mcarlo_cuda}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% FIGURA
-\begin{figure}[H]
-\centering
-\includegraphics[width=1.0\textwidth]{Imagens/graficos_mcarlo/mcarlo_speedup_cuda.png}
-\caption{Gráfico do speedup do algoritmo Monte Carlo}
-\label{fig:grafico_speedup_mcarlo_cuda}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section{Análise dos resultados}
 
-Como podemos ver, mesmo sem nenhuma otimização tanto no código quanto nos parâmetros de execução do Kernel, os tempos de execução da versão CUDA são significantemente menores, apresentando tempos 6 vezes menores quando usado a GPU 9600GT, e de até 40 vezes com a GPU GTX480 nos testes feitos. Além disso, é perceptível pelas curvas apresentadas no gráfico que essa redução será ainda maior a medida que o tamanho da entrada aumentar, comprovando o poder de processamento das GPUs Nvidia com a tecnologia CUDA.
+Como podemos ver, mesmo sem nenhuma otimização tanto no código quanto nos parâmetros de execução do código em CUDA, os tempos de execução da versão CUDA são significantemente menores, apresentando tempos seis vezes menores quando usado uma placa-de-vídeo mais antiga como a GPU 9600GT, e de até 30 vezes com a GPU GTX480 nos testes feitos, comparando-as com a CPU Intel I7, considerada por muitos a mais potente da atualidade.
+
+Muitos dos computadores atuais possuem uma placa-de-vídeo capacitada com a tecnologia CUDA. Porém, na grande maioria das vezes, esse recurso é realmente requisitada apenas para visualização de vídeos e jogos. Sabendo disso os resultados desse trabalho demonstram que esse recurso poderia ser melhor aproveitado para fins acadêmicos.

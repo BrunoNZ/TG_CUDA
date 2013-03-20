@@ -1,6 +1,6 @@
-#set terminal postscript enhanced eps font 18
-set terminal pngcairo size 1280,768 enhanced font 'Arial,20'
-set output "mcarlo_tempos_cuda.png"
+set terminal postscript enhanced eps font 20
+#set terminal pngcairo size 1280,768 enhanced font 'Arial,20'
+set output "mcarlo_tempos_cuda.eps"
 
 set size ratio 0.6
 
@@ -24,9 +24,8 @@ set key left
 set style line 1 lt 1 lw 4 lc rgb "black"
 set style line 2 lt 1 lw 4 lc rgb "blue"
 set style line 3 lt 1 lw 4 lc rgb "red"
-set style line 4 lt 2 lw 4 lc rgb "green"
+set style line 4 lt 1 lw 4 lc rgb "green"
 set style line 5 lt 1 lw 4 lc rgb "dark-grey"
-set style line 6 lt 1 lw 4 lc rgb "#1E90FF"
 
 plot 	"../../Logs/MonteCarlo/processados/seq_uhura.lista" using 1:3 w l title "[SEQ] Intel I7" ls 1 ,\
 	"../../Logs/MonteCarlo/processados/cuda_9600gt.lista" using 1:3 w l title "[CUDA] NVidia 9600GT" ls 2 ,\

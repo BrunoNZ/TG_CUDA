@@ -13,7 +13,3 @@ typedef struct _parametros_exec{
 		threads_por_bloco, blocos_por_grid;
 	size_t tam_por_ciclo, mem_total, mem_free;
 } parametros_exec;
-
-//DEFINICAO DO NUMERO DE THREADS POR BLOCO
-#define THREADS_POR_BLOCO 16
-

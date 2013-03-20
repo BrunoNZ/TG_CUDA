@@ -1,6 +1,6 @@
-#set terminal postscript enhanced eps font 18
-set terminal pngcairo size 1280,512 enhanced font 'Arial,20' dashed
-set output "lanczos_tempos_omp.png"
+set terminal postscript enhanced eps font 20
+#set terminal pngcairo size 1280,512 enhanced font 'Arial,20' dashed
+set output "lanczos_tempos_omp.eps"
 
 set size ratio 0.4
 
@@ -11,7 +11,7 @@ set ydata time
 set timefmt "%Mm%Ss"
 set format y "%Mmin"
 
-set xrange [1000:22000]
+set xrange [5000:22000]
 set xtics rotate by -45 (1000,3000,5000,7000,9000,11000,13000,15000,17000,19000,21000)
 
 set key left
