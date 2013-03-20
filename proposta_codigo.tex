@@ -2,14 +2,14 @@
 
 Por fim, resumindo-se tudo o que foi já foi dito e usando como base a implementação em CUDA, que se mostrou a mais eficiente, é apresentado um esqueleto padrão de código que soluciona o problema proposto de forma simplificada. Esse esqueleto visa facilitar o trabalho de adaptação de algoritmos sequenciais de processamento de dados atmosféricos em uma solução paralela do mesmo.
 
-A implementação contém duas estruturas de variáveis, definidas no arquivo \ref{lst:estruturas}, nomeadas \texttt{parametros} e \texttt{parametros\_exec} que armazenam, respectivamente, os parâmetros de entrada e os parâmetros de execução da função em CUDA.
+A implementação contém duas estruturas de variáveis, definidas no código-fonte \ref{lst:estruturas}, nomeadas \texttt{parametros} e \texttt{parametros\_exec} que armazenam, respectivamente, os parâmetros de entrada e os parâmetros de execução da função em CUDA.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CODIGO:
 \lstinputlisting[caption=Estrutura de Dados, style=code_style, label=lst:estruturas]{Codigos/esqueleto_estruturas.h}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-A função que será executada no device não difere muito da implementação sequencial, como já foi demonstrado na figura \ref{fig:comparacao_codigo_padrao}. Primeiramente é necessário adicionar a declaração \texttt{\_\_global\_\_} antes do nome da função, para que o compilador saiba que essa será a função a ser executada pelo device. Depois é preciso definir qual quadrícula cada thread processará, verificar se essa quadrícula está dentro do escopo do ciclo ou não e por fim calcular a posição do vetor do vetor que contém o início dos dados da quadrícula a ser processada. Essas três etapas estão definidas nas linhas 3, 4 e 6 do código-fonte \ref{lst:funcao}. Por fim há a implementação do algoritmo em si. Durante essa etapa só é necessário alguma alteração se o algoritmo possuir alguma função que não seja compatível com a arquitetura CUDA. Nesse caso é preciso encontrar uma função equivalente nas bibliotecas CUDA.
+A função que será executada no device não difere muito da implementação sequencial, como já foi demonstrado na figura \ref{fig:comparacao_codigo_padrao}. Primeiramente é necessário adicionar a declaração \texttt{\_\_global\_\_} antes do nome da função, para que o compilador saiba que essa será a função a ser executada pelo device. Depois é preciso definir qual quadrícula cada thread processará, verificar se essa quadrícula está dentro do escopo do ciclo ou não e por fim calcular a posição do vetor que contém o início dos dados da quadrícula a ser processada. Essas três etapas estão definidas nas linhas 3, 4 e 6 do código-fonte \ref{lst:funcao}. Por fim há a implementação do algoritmo em si. Durante essa etapa só é necessário alguma alteração se o algoritmo possuir alguma função que não seja compatível com a arquitetura CUDA. Nesse caso é preciso encontrar uma função equivalente nas bibliotecas CUDA.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CODIGO:
@@ -18,9 +18,9 @@ A função que será executada no device não difere muito da implementação se
 
 Na função \texttt{main}, definida no código-fonte \ref{lst:main}, a primeira coisa a se fazer é ler os argumentos e os dados de entrada e calcular parâmetros de execução.
 
-Os parâmetros de entrada são lidos pela função \texttt{le\_parametros\_entrada} e dados são lidos e reorganizados, da forma descrita no capitulo \ref{cap:proposta_solucao}, pela função \texttt{le\_matriz\_entrada} e são apontados pela variável \texttt{d\_entrada}. Já os parâmetros de execução são calculados pela função \texttt{calcula\_parametros\_execucao}, que tem como argumentos o número de pontos e o tamanho das séries do dado de entrada. Essas funções estão definidas respectivamente nas linhas 14, 23 e 46 do código-fonte \ref{lst:complementar}.
+Os parâmetros de entrada são lidos pela função \texttt{le\_parametros\_entrada}. Os dados são lidos e reorganizados, da forma descrita no capitulo \ref{cap:proposta_solucao}, pela função \texttt{le\_matriz\_entrada} e são apontados pela variável \texttt{d\_entrada}. Já os parâmetros de execução são calculados pela função \texttt{calcula\_parametros\_execucao}, que tem como argumentos o número de pontos e o tamanho das séries do dado de entrada. Essas funções estão definidas respectivamente nas linhas 14, 23 e 46 do código-fonte \ref{lst:complementar}.
 
-Após essas etapas é preciso inicializar e configurar o device para que o mesmo seja capaz de executar as tarefas necessárias. Esse processo começa com a alocação de espaço na memória no device para armazenar os dados de entrada e saída, igualmente como é feito em qualquer outro programa, e para isso é utilizado a função \texttt{cudaMalloc} da biblioteca CUDA, a qual se assemelha muito com a função \texttt{malloc}. A grande diferença desse passo para o que normalmente é feito é que o espaço alocado não é para armazenar todo o dado de entrada mas apenas uma parte desse referente ao que será processado em cada ciclo.
+Após essas etapas é preciso inicializar e configurar o device para que o mesmo seja capaz de executar as tarefas necessárias. Esse processo começa com a alocação de espaço na memória do device para armazenar os dados de entrada e saída, igualmente como é feito em qualquer outro programa, e para isso é utilizado a função \texttt{cudaMalloc} da biblioteca CUDA, a qual se assemelha muito com a função \texttt{malloc}. A grande diferença desse passo para o que normalmente é feito é que o espaço alocado não é para armazenar todo o dado de entrada mas apenas uma parte desse referente ao que será processado em cada ciclo.
 
 Logo após esse processo inicia-se o laço de ciclos. Em cada um desses ciclos serão executados os passos descritos na seção \ref{cap:implementacao_solucao}. Os passos estão definidos em ordem nas linhas 20, 22, 25, 30 e 32 do código-fonte \ref{lst:main}.
 
@@ -39,4 +39,3 @@ Quando todos os ciclos terminarem, os resultados são escritos em disco pela fun
 % CODIGO:
 \lstinputlisting[caption=Funções Complementares, style=code_style, label=lst:complementar]{Codigos/esqueleto_complementar.c}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
