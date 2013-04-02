@@ -4,7 +4,7 @@ Para analisar o tempo de execução real das duas implementações é preciso pr
 
 \section{Autenticação dos resultados}
 
-Algo imprescindível em algoritmos de processamento e análise de dados para que possam ser efetivamente usados em pesquisas é a confiabilidade dos resultados obtidos. Nem sempre é possível apenas observando os resultados saber se os mesmos estão certos ou errados. Portanto é preciso ter total confiança de que os dados obtidos da execução do algoritmo estão corretos.
+Algo imprescindível em algoritmos de processamento e análise de dados para que possam ser efetivamente usados em pesquisas é a confiabilidade dos resultados obtidos. Nem sempre é possível, apenas observando os resultados, saber se os mesmos estão certos ou errados. Portanto é preciso ter total confiança de que os dados obtidos da execução do algoritmo estão corretos.
 
 Por esse motivo, o pequeno número de alterações feitas no código é tão importante, pois evita que erros sejam cometidos no processo de conversão. Além disso, em todos os testes realizados, os resultados obtidos das implementações em OpenMP e CUDA foram comparados com os do sequencial, e em todos os casos os mesmos foram idênticos, comprovando que os resultados estão corretos.
 
@@ -49,7 +49,7 @@ Os tempos foram marcados utilizando o comando \texttt{time} do Linux, e portanto
 
 \subsection{Resultados obtidos com o algoritmo Filtro de Lanczos}
 
-Nos testes do algoritmo Filtro de Lanczos foi usado como dado de entrada uma matriz de 144 por 73 que contém as informações da temperatura diária de todo o globo entre 1950 e 2011, totalizando aproximadamente 22000 valores. Desse total, foram usados entre 5000 e 21000 valores nos testes realizados.
+Nos testes do algoritmo Filtro de Lanczos foi usado como dado de entrada uma matriz de 144 por 73 que contém as informações da temperatura diária de todo o globo entre 1950 e 2011, totalizando aproximadamente 22000 valores para cada quadrícula. Desse total, foram usados entre 5000 e 21000 valores nos testes realizados.
 
 Nas duas implementações houve uma grande redução do tempo de execução em relação ao tempo da execução sequencial do mesmo, como demonstrado nas figuras \ref{fig:graficos_lanczos_cuda} e \ref{fig:graficos_lanczos_omp}. O melhor resultado foi obtido na execução da implementação em CUDA na GPU GTX480, a qual obteve uma melhora de trinta vezes em relação a execução sequencial numa CPU Intel I7. Com a implementação em OpenMP se obteve uma redução de apenas três vezes.
 
@@ -76,7 +76,7 @@ Nas duas implementações houve uma grande redução do tempo de execução em r
 \subsection{Resultados obtidos com o algoritmo Teste de Monte Carlo}
 
 Nos testes do algoritmo de Monte Carlo foram usados como dado de entrada uma matriz de 48 por 56 que contém as informações da quantidade de chuva diária na América do Sul entre os anos de 1979 e 1999, totalizando 7665 valores por série, e uma série de chuva de um local na África do mesmo comprimento.
-Porém, para questão de comparação, o total de valores usados nos testes foi variado entre 1000 e 5000. Da mesma forma o número de permutações foi variado entre 1000 e 9000.
+Porém, para questão de comparação, o total de valores usados nos testes foi variado entre 1000 e 5000. Da mesma forma, o número de permutações foi variado entre 1000 e 9000.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FIGURA
@@ -100,9 +100,9 @@ Nos testes da implementação em OpenMP houve uma grande surpresa, pois o tempo 
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Uma teoria que explique tais resultados é que pelo fato da implementação em OpenMP prover de apenas uma memória que é compartilhada entre todas as threads, ao se fazer as permutações das séries são realizadas inúmeras requisições simultâneas de escrita na memória que por sua vez não é capaz de responder todas elas imediatamente. Esse atraso faz com que as threads fiquem ociosas durante um longo tempo até que todas as requisições sejam executadas. Ao aumentar o número de permutações o número de requisições é proporcionalmente incrementado agravando o problema.
+Uma teoria que explique tais resultados é que pelo fato da implementação em OpenMP prover de apenas uma memória que é compartilhada entre todas as threads, ao se fazer as permutações das séries são realizadas inúmeras requisições simultâneas de escrita na memória que por sua vez não é capaz de responder todas elas imediatamente. Esse atraso faz com que as threads fiquem ociosas durante um longo tempo até que todas as requisições sejam executadas. Ao aumentar o número de permutações, o número de requisições é proporcionalmente incrementado, agravando o problema.
 
-Tal problema não ocorre na implementação em CUDA pois a mesma é executada na GPU, que possui uma arquitetura de memória totalmente diferente a qual provêm a cada thread diversos níveis de memória, incluindo uma própria, como descrito na seção 2.3 de \cite{cuda_guide}. Dessa forma as requisições de escrita são distribuídas entre várias memórias independentes reduzindo o congestionamento de requisições.
+Tal problema não ocorre na implementação em CUDA pois a mesma é executada na GPU, que possui uma arquitetura de memória totalmente diferente a qual provê à cada thread diversos níveis de memória, incluindo uma própria, como descrito na seção 2.3 de \cite{cuda_guide}. Dessa forma as requisições de escrita são distribuídas entre várias memórias independentes reduzindo o congestionamento de requisições.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FIGURA
@@ -114,7 +114,7 @@ Tal problema não ocorre na implementação em CUDA pois a mesma é executada na
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Para reforçar essa hipótese foi feito alguns testes reduzindo o número de threads usadas na execução da implementação em OpenMP. Esses resultados estão expostos na figura \ref{fig:grafico_mcarlo_omp_threads}. É perceptível que ao reduzir o número de threads o tempo de execução reduz consideravelmente, pois o total de requisições simultâneas também é reduzida e assim amenizando o problema. Ainda assim os tempos  de execução continuaram maiores do que a implementação sequencial.
+Para reforçar essa hipótese foram feitos alguns testes reduzindo o número de threads usadas na execução da implementação em OpenMP. Esses resultados estão expostos na figura \ref{fig:grafico_mcarlo_omp_threads}. É perceptível que ao reduzir o número de threads o tempo de execução reduz consideravelmente, pois o total de requisições simultâneas também é reduzida e assim amenizando o problema. Ainda assim os tempos  de execução continuaram maiores do que a implementação sequencial.
 
 Esses resultados são importantes para demonstrar que a arquitetura atual dos computadores não é a ideal para se executar algoritmos paralelos.
 
@@ -122,4 +122,4 @@ Esses resultados são importantes para demonstrar que a arquitetura atual dos co
 
 Como podemos ver, mesmo sem nenhuma otimização tanto no código quanto nos parâmetros de execução do código em CUDA, os tempos de execução da versão CUDA são significantemente menores, apresentando tempos seis vezes menores quando usado uma placa-de-vídeo mais antiga como a GPU 9600GT, e de até 30 vezes com a GPU GTX480 nos testes feitos, comparando-as com a CPU Intel I7, considerada por muitos a mais potente da atualidade.
 
-Muitos dos computadores atuais possuem uma placa-de-vídeo capacitada com a tecnologia CUDA. Porém, na grande maioria das vezes, esse recurso é realmente requisitada apenas para visualização de vídeos e jogos. Sabendo disso os resultados desse trabalho demonstram que esse recurso poderia ser melhor aproveitado para fins acadêmicos.
+Muitos dos computadores atuais possuem uma placa-de-vídeo capacitada com a tecnologia CUDA. Porém, na grande maioria das vezes, esse recurso é realmente requisitado apenas para visualização de vídeos e jogos. Sabendo disso os resultados desse trabalho demonstram que esse recurso poderia ser melhor aproveitado para fins acadêmicos.

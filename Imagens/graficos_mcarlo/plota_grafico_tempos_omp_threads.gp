@@ -1,17 +1,18 @@
+set encoding utf8
 set terminal postscript enhanced eps font 20
 #set terminal pngcairo size 1280,768 enhanced font 'Arial,20'
 set output "mcarlo_tempos_omp_threads.eps"
 
 set size ratio 0.6
 
-set ylabel "Tempo de Execucao"
-set xlabel "Tamanho da serie / Numero de Permutacoes"
+set ylabel "Tempo de Execução"
+set xlabel "Tamanho da série / Número de permutações"
 
-set ydata time
-set timefmt "%Mm%Ss"
-set format y "%M"
-set yrange ["0:0":"60:0"]
-set ytics ("0m" "0:0", "10m" "10:0", "20m" "20:0", "30m" "30:0", "40m" "40:0", "50m" "50:0", "60m" "60:0" )
+#set ydata time
+#set timefmt "%Mm%Ss"
+#set format y "%M"
+set yrange ["0:0":"120:0"]
+set ytics ("0m" "0:0", "20m" "20:0", "40m" "40:0", "60m" "60:0", "80m" "80:0", "100m" "100:0", "120m" "120:0" )
 
 set xrange [1:16]
 set xtics rotate by -45\

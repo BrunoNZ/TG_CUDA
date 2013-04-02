@@ -1,11 +1,12 @@
+set encoding utf8
 set terminal postscript enhanced eps font 20
 #set terminal pngcairo size 1280,768 enhanced font 'Arial,20'
 set output "mcarlo_tempos_cuda.eps"
 
 set size ratio 0.6
 
-set ylabel "Tempo de Execucao"
-set xlabel "Tamanho da serie / Numero de Permutacoes"
+set ylabel "Tempo de Execução"
+set xlabel "Tamanho da série / Número de permutações"
 
 set ydata time
 set timefmt "%Mm%Ss"
@@ -29,5 +30,5 @@ set style line 5 lt 1 lw 4 lc rgb "dark-grey"
 
 plot 	"../../Logs/MonteCarlo/processados/seq_uhura.lista" using 1:3 w l title "[SEQ] Intel I7" ls 1 ,\
 	"../../Logs/MonteCarlo/processados/cuda_9600gt.lista" using 1:3 w l title "[CUDA] NVidia 9600GT" ls 2 ,\
-	"../../Logs/MonteCarlo/processados/cuda_orval.lista" using 1:3 w l title "NVidia Tesla C1060" ls 3 ,\
-	"../../Logs/MonteCarlo/processados/cuda_achel.lista" using 1:3 w l title "NVidia Tesla C2050" ls 4
+	"../../Logs/MonteCarlo/processados/cuda_orval.lista" using 1:3 w l title "[CUDA] NVidia Tesla C1060" ls 3 ,\
+	"../../Logs/MonteCarlo/processados/cuda_achel.lista" using 1:3 w l title "[CUDA] NVidia Tesla C2050" ls 4

@@ -1,6 +1,6 @@
 \chapter{Algoritmos atmosféricos}\label{cap:algs_atmosfericos}
 
-O objetivo desses algoritmos é processar uma base de dados, com base em conceitos estatísticos, de tal forma a gerar novas informações que possam ser usadas em pesquisas e estudos relacionada a área atmosférica. Grande parte desses algoritmos se baseiam no processamento de uma única série de dados e calculam a informação para apenas essa série, da mesma forma como é feito quando calcula-se a média de uma série de valores. Na verdade, muito desses algoritmos também podem serem usados em outras áreas com a diferença do tipo do dado de entrada usado e alguns pequenos ajustes. Posteriormente esses algoritmos são aplicados para um conjunto de séries relacionadas a diferentes locais da área a ser estudada, como será descrito nos próximos capítulos. Um fato importante a se notar é de que, normalmente, o processamento de cada uma das séries é independente uma das outras. 
+O objetivo desses algoritmos é processar uma base de dados, com base em conceitos estatísticos, de tal forma a gerar novas informações que possam ser usadas em pesquisas e estudos relacionados à área atmosférica. Grande parte desses algoritmos se baseiam no processamento de uma única série de dados e calculam a informação para apenas essa série, da mesma forma como é feito quando calcula-se a média de uma série de valores. Na verdade, muito desses algoritmos também podem serem usados em outras áreas com a diferença do tipo do dado de entrada usado e alguns pequenos ajustes. Posteriormente esses algoritmos são aplicados para um conjunto de séries relacionadas a diferentes locais da área a ser estudada, como será descrito nos próximos capítulos. Um fato importante a se notar é de que, normalmente, o processamento de cada uma das séries é independente uma das outras. 
 
 Para exemplificar usaremos os algoritmos Filtro de Lanczos e Teste de Monte Carlo, pois cada um possui caraterísticas próprias que fazem com que a execução dos mesmos possa ser muito demorada quando executados sequencialmente.
 
@@ -8,9 +8,12 @@ Para exemplificar usaremos os algoritmos Filtro de Lanczos e Teste de Monte Carl
 
 O algoritmo Filtro de Lanczos, descrito por \cite{Duchon:1979}, é utilizado, entre outras coisas, para filtrar variações temporais de dados atmosféricos diários. O problema consiste em calcular resultados para um certo vetor de dados, multiplicando-se um vetor de constantes de tamanho menor, $WT$, previamente calculado, com um pedaço da serie de dados, e armazenando o resultado numa nova série de dados, na posição central, como descrito na fórmula a seguir:
 
-\[ Res[T+ \lfloor \frac{K}{2} \rfloor ]=\sum _{i=0} ^{k-1} WT[i] \times Dados[T+i] \]
+\[
+Para \; (t=1\;,\;NT): \;
+Res[t + \lfloor \frac{K}{2} \rfloor ]=\sum _{i=0} ^{K-1} ( WT[i] \times Dados[t+i] )
+\]
 
-Para cada resultado produzido por esse algoritmo é necessário $K$ multiplicações, onde $K$ é o número de pesos usados, definidos por \cite{Duchon:1979}. Logo, para um série de 100 valores é necessário aproximadamente $K*100$ operações. Uma vez que os dados de entrada usados para esses algoritmos possuem centenas de séries de centenas de valores cada uma, como será descrito mais a frente, o tempo de execução desse algoritmo, mesmo sendo uma função sequencial relativamente simples, tende a ser muito grande.
+Para cada resultado produzido por esse algoritmo são necessárias $K$ somas e multiplicações, onde $K$ é o número de pesos usados, definidos por \cite{Duchon:1979}. Uma vez que os dados de entrada usados para esses algoritmos possuem centenas de séries de centenas de valores cada uma, como será descrito mais a frente, o tempo de execução desse algoritmo, mesmo sendo uma função sequencial relativamente simples, tende a ser muito grande.
 
 \section{Teste de Monte Carlo}
 
@@ -19,7 +22,7 @@ O teste de Monte Carlo é utilizado, dentro da área de estudos atmosféricos, p
 O algoritmo a ser estudado nesse trabalho foi retirado de \cite{Joao:2010} e é dado pelos seguintes passos, sendo $n_{e}$ o número de experimentos do teste de Monte Carlo:
 
 \begin{enumerate}
-\item  é calculado o coeficiente de correlação entre as séries A e B. Por simplicidade, a correlação entre essas duas séries será chamada de correlação original;
+\item  é calculado o coeficiente de correlação entre as séries A e B. Por simplicidade, a correlação entre essas duas séries será chamada de correlação original;\footnote{O cálculo da correlação é linear, e exige aproximadamente $NT*10$ operações, onde $NT$ é a quantidade de valores em cada série}
 
 \item  a séria A sofre permutação entre seus membros, a fim de se formar uma nova série;
 
@@ -32,4 +35,4 @@ O algoritmo a ser estudado nesse trabalho foi retirado de \cite{Joao:2010} e é 
 \item  chamando de $cor_{m}$ o número de vezes em que o novo coeficiente de correlação foi maior do que o original, o nível de significância é definido como a razão entre $cor_{m}$ e $n_{e}$;
 \end{enumerate}
 
-O tempo de execução desse algoritmo pode ser bastante elevado dependendo do valor $n_{e}$, pois o mesmo define a quantidade de novas séries a serem geradas e o cálculo de um novos coeficiente de correlação. Sabendo-se que essas séries podem conter centenas de valores, a quantidade de acessos a memória necessários para escrever e ler todos esses valores é muito grande, elevando o tempo de execução consideravelmente.
+O tempo de execução desse algoritmo pode ser bastante elevado dependendo do valor $n_{e}$, pois o mesmo define a quantidade de novas séries a serem geradas e de cálculos de novos coeficientes de correlação. Sabendo-se que essas séries podem conter centenas de valores, a quantidade de acessos a memória necessários para escrever e ler todos esses valores é muito grande, elevando o tempo de execução consideravelmente.

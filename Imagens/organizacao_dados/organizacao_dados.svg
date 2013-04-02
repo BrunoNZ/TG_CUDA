@@ -16,7 +16,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="organizacao_dados_2.svg">
+   sodipodi:docname="organizacao_dados.svg"
+   inkscape:export-filename="/home/bruno/Materias_UFPR/TG_CUDA/Artigo_TG/Imagens/organizacao_dados/organizacao_dados.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
   <defs
      id="defs4">
     <inkscape:perspective
@@ -1014,7 +1017,7 @@
      inkscape:cx="238.4955"
      inkscape:cy="58.992957"
      inkscape:document-units="px"
-     inkscape:current-layer="g5448-2"
+     inkscape:current-layer="layer1"
      showgrid="false"
      units="cm"
      inkscape:window-width="1600"
@@ -2346,7 +2349,12 @@
          x="209.25584"
          y="257.5578"
          style="font-size:12px;text-align:center;text-anchor:middle"
-         id="tspan3598">original dos dados</tspan></text>
+         id="tspan3598">original dos dados</tspan><tspan
+         sodipodi:role="line"
+         x="209.25584"
+         y="272.5578"
+         style="font-size:12px;text-align:center;text-anchor:middle"
+         id="tspan3498">em memória</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:31.95993233px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"

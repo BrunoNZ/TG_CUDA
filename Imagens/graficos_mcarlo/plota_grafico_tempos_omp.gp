@@ -1,17 +1,18 @@
+set encoding utf8
 set terminal postscript enhanced eps font 20
 #set terminal pngcairo size 1280,768 enhanced font 'Arial,20'
 set output "mcarlo_tempos_omp.eps"
 
 set size ratio 0.6
 
-set ylabel "Tempo de Execucao"
-set xlabel "Tamanho da serie / Numero de Permutacoes"
+set ylabel "Tempo de Execução"
+set xlabel "Tamanho da série / Número de permutações"
 
-set ydata time
-set timefmt "%Mm%Ss"
-set format y "%M"
-set yrange ["0:0":"60:0"]
-set ytics ("0m" "0:0", "10m" "10:0", "20m" "20:0", "30m" "30:0", "40m" "40:0", "50m" "50:0", "60m" "60:0" )
+#set ydata time
+#set timefmt "%Mm%Ss"
+#set format y "%M"
+set yrange ["0:0":"250:0"]
+set ytics ("0m" "0:0", "50m" "50:0", "100m" "100:0", "150m" "150:0", "200m" "200:0", "250m" "250:0")
 
 set xrange [1:16]
 set xtics rotate by -45\
@@ -27,7 +28,8 @@ set style line 3 lt 1 lw 4 lc rgb "red"
 set style line 4 lt 1 lw 4 lc rgb "green"
 set style line 5 lt 1 lw 4 lc rgb "dark-grey"
 
+#set log
 plot "../../Logs/MonteCarlo/processados/seq_uhura.lista" using 1:3 w l title "[SEQ] Intel I7" ls 1 ,\
-	"../../Logs/MonteCarlo/processados/omp_servlab_8threads.lista" using 1:3 w l title "[OMP] Intel I5" ls 2,\
-	"../../Logs/MonteCarlo/processados/omp_uhura_8threads.lista" using 1:3 w l title "[OMP] Intel I7" ls 3,\
-	"../../Logs/MonteCarlo/processados/omp_priorat_8threads.lista" using 1:3 w l title "[OMP] AMD Opteron" ls 4
+	"../../Logs/MonteCarlo/processados/omp_servlab_8threads.lista_2" using 1:3 w l title "[OMP] Intel I5" ls 2,\
+	"../../Logs/MonteCarlo/processados/omp_uhura_8threads.lista_2" using 1:3 w l title "[OMP] Intel I7" ls 3,\
+	"../../Logs/MonteCarlo/processados/omp_priorat_8threads.lista_2" using 1:3 w l title "[OMP] AMD Opteron" ls 4

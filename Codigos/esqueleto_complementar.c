@@ -45,8 +45,7 @@ void le_matriz_entrada(char *arq_entrada, parametros param, float **d){
 
 void calcula_parametros_execucao(parametros_exec *param_exec, int NP, int NT){
 
-	int npos_por_ciclo;
-	int total_ciclos;
+	int npos_por_ciclo, total_ciclos;
 	size_t tam_por_ciclo;
 
 	total_ciclos=1;
@@ -54,6 +53,10 @@ void calcula_parametros_execucao(parametros_exec *param_exec, int NP, int NT){
 
 	cudaMemGetInfo(&param_exec->mem_free, &param_exec->mem_total);
 
+	//FOI DECREMENTADO UMA QUANTIA DO VALOR TOTAL DE MEMORIA LIVRE
+	//PARA QUE NAO SEJA USADO 100% DA MEMORIA DISPONIVEL, POR
+	//UMA QUESTAO DE ESTABILIDADE. ISSO PODE CAUSAR TRAVAMENTOS.
+	//ESSE VALOR PODE SER ALTERADO.
 	tam_por_ciclo=(npos_por_ciclo*NT)*sizeof(float);
 	while ( tam_por_ciclo > (param_exec->mem_free-50) ){
 		total_ciclos=total_ciclos+1;
@@ -68,10 +71,10 @@ void calcula_parametros_execucao(parametros_exec *param_exec, int NP, int NT){
 	param_exec->blocos_por_grid=(npos_por_ciclo+THREADS_POR_BLOCO-1)/THREADS_POR_BLOCO;
 
 	//CALCULA O NUMERO TOTAL DE POSICOES QUE SERAO CALCULADAS
-	// ESSE NUMERO PROVAVELMENTE SERA MAIOR QUE O NP,
-	// POR ISSO NAO SE PODE ALOCAR EXATAMENTE O TAMANHO DA SAIDA ESPERADO.
-	// TEM QUE ALOCAR ESSA MEMORIA A MAIS PARA GARANTIR
-	// QUE NO ULTIMO CICLO NAO SEJA COPIADO DADOS ALEM DO QUE FOI ALOCADO
+	//ESSE NUMERO PROVAVELMENTE SERA MAIOR QUE O NP,
+	//POR ISSO NAO SE PODE ALOCAR EXATAMENTE O TAMANHO DA SAIDA ESPERADO.
+	//TEM QUE ALOCAR ESSA MEMORIA A MAIS PARA GARANTIR
+	//QUE NO ULTIMO CICLO NAO SEJA COPIADO DADOS ALEM DO QUE FOI ALOCADO
 	param_exec->total_npos=param_exec->npos_por_ciclo*param_exec->total_ciclos;
 
 	return;
