@@ -1,0 +1,92 @@
+############################
+## LOG GERADO EM: "Wed Apr  3 16:37:34 BRT 2013"
+## NO HOST: "achel"
+## COM OS PARAMETROS: "OP_VERSAO:CUDA/LISTA_NT:"1000 3000 5000 7000 9000 11000 13000 15000 17000 19000 21000"/ARQ_LOG:logs/log_LEITURA-ORIGINAL_achel.txt "
+## INICIADO NO TEMPO: "1365017854"
+############################
+
+############################
+## [EXEC]_NT:1000
+make: Nothing to be done for `cuda'.
+
+real	0m0.030s
+user	0m0.004s
+sys	0m0.024s
+############################
+## [EXEC]_NT:3000
+make: Nothing to be done for `cuda'.
+
+real	0m0.062s
+user	0m0.000s
+sys	0m0.056s
+############################
+## [EXEC]_NT:5000
+make: Nothing to be done for `cuda'.
+
+real	0m0.095s
+user	0m0.000s
+sys	0m0.092s
+############################
+## [EXEC]_NT:7000
+make: Nothing to be done for `cuda'.
+
+real	0m0.121s
+user	0m0.000s
+sys	0m0.116s
+############################
+## [EXEC]_NT:9000
+make: Nothing to be done for `cuda'.
+
+real	0m0.152s
+user	0m0.000s
+sys	0m0.148s
+############################
+## [EXEC]_NT:11000
+make: Nothing to be done for `cuda'.
+
+real	0m0.185s
+user	0m0.000s
+sys	0m0.180s
+############################
+## [EXEC]_NT:13000
+make: Nothing to be done for `cuda'.
+
+real	0m0.218s
+user	0m0.000s
+sys	0m0.204s
+############################
+## [EXEC]_NT:15000
+make: Nothing to be done for `cuda'.
+
+real	0m0.250s
+user	0m0.000s
+sys	0m0.244s
+############################
+## [EXEC]_NT:17000
+make: Nothing to be done for `cuda'.
+
+real	0m0.281s
+user	0m0.000s
+sys	0m0.260s
+############################
+## [EXEC]_NT:19000
+make: Nothing to be done for `cuda'.
+
+real	0m0.324s
+user	0m0.000s
+sys	0m0.308s
+############################
+## [EXEC]_NT:21000
+make: Nothing to be done for `cuda'.
+
+real	0m0.345s
+user	0m0.000s
+sys	0m0.324s
+
+############################
+## EXECUCAO TERMINADA COM SUCESSO
+## TOTAL DE ERROS: "11"
+## TERMINADO NO TEMPO "1365017856"
+## DURACAO TOTAL (sec): "2"
+## DURACAO TOTAL (min): ".03333333333333333333"
+############################

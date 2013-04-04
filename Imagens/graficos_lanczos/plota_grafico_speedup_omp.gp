@@ -8,6 +8,8 @@ set size ratio 0.4
 set ylabel "Speedup"
 set xlabel "Tamanho da série"
 
+set yrange [0:4]
+
 set xrange [5000:22000]
 set xtics rotate by -45 (1000,3000,5000,7000,9000,11000,13000,15000,17000,19000,21000)
 

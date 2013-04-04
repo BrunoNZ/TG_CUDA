@@ -118,8 +118,26 @@ Para reforçar essa hipótese foram feitos alguns testes reduzindo o número de 
 
 Esses resultados são importantes para demonstrar que a arquitetura atual dos computadores não é a ideal para se executar algoritmos paralelos.
 
+\subsection{Tempo gasto para a leitura dos dados usando o modo proposto}
+
+Um fator importante para a análise dos resultados é o tempo gasto para ler e reorganizar os dados do modo proposto na seção \ref{cap:proposta_solucao}, pois essa tarefa agrega um tempo extra ao tempo total de execução que normalmente não existiria. Os gráficos abaixo demonstram a diferença entre o tempo de leitura dos dados usados como entrada para o algoritmo Filtro de Lanczos utilizando o método original e o método proposto, e um comparativo desse tempo de leitura e o tempo total da execução da implementação em CUDA na GPU Tesla C2050.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FIGURA
+\begin{figure}[H]
+\centering
+\includegraphics[]{Imagens/grafico_tempo_leitura/lanczos_tempos_leitura.png}
+\caption{Gráficos comparativos do tempo de leitura dos dados}
+\label{fig:grafico_tempos_leitura}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+No exemplo dado, o tempo gasto com a leitura dos dados utilizando o método proposto foi, em média, dez vezes maior que o tempo utilizando o método padrão e representa aproximadamente 10\% do tempo total de execução.
+
+Fica claro que o tempo gasto com a leitura dos dados é maior. Porém, esse tempo extra é necessário para a execução dos algoritmos e não causa um prejuízo tão grande para o tempo total de execução se comparado aos benefícios trazidos.
+
 \section{Análise dos resultados}
 
-Como podemos ver, mesmo sem nenhuma otimização tanto no código quanto nos parâmetros de execução do código em CUDA, os tempos de execução da versão CUDA são significantemente menores, apresentando tempos seis vezes menores quando usado uma placa-de-vídeo mais antiga como a GPU 9600GT, e de até 30 vezes com a GPU GTX480 nos testes feitos, comparando-as com a CPU Intel I7, considerada por muitos a mais potente da atualidade.
+Como podemos ver, mesmo com o tempo gasto com a leitura e reorganização dos dados e sem nenhuma otimização tanto no código quanto nos parâmetros de execução do código em CUDA, os tempos de execução da versão CUDA são significantemente menores, apresentando tempos seis vezes menores quando usado uma placa-de-vídeo mais antiga como a GPU 9600GT, e de até 30 vezes com a GPU GTX480 nos testes feitos, comparando-as com a CPU Intel I7, considerada por muitos a mais potente da atualidade.
 
 Muitos dos computadores atuais possuem uma placa-de-vídeo capacitada com a tecnologia CUDA. Porém, na grande maioria das vezes, esse recurso é realmente requisitado apenas para visualização de vídeos e jogos. Sabendo disso os resultados desse trabalho demonstram que esse recurso poderia ser melhor aproveitado para fins acadêmicos.
