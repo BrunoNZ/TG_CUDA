@@ -27,6 +27,7 @@ for (ciclo=0;ciclo<param_exec.total_ciclos;ciclo++){
 					( <ARGUMENTOS> );
 	cudaDeviceSynchronize();
 
+	//IGUAL AO DE ENTRADA POIS NESSE CASO A SAIDA TAMBEM E' UMA SERIE
 	pos_inicio_copia_saida=(ciclo*param_exec.npos_por_ciclo)*param.NT;
 
 	cudaMemcpy((h_saida+pos_inicio_copia_saida),d_saida,

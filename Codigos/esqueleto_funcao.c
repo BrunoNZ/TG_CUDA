@@ -6,5 +6,4 @@ if (p >= total_pos) return;
 int ini_seq=(p*NT);
 
 <ALGORITMO>
-
 }

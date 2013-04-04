@@ -38,7 +38,6 @@ void le_matriz_entrada(char *arq_entrada, parametros param, float **d){
 			(*d)[pos]=buffer[p];
 		}
 	}
-
 	free(buffer);
 	fclose(arq);
 }
@@ -96,6 +95,5 @@ void salva_dados_saida(parametros param, float *s){
 			fwrite((s+pos),sizeof(float),1,arq);
 		}
 	}
-
 	fclose(arq);
 }
